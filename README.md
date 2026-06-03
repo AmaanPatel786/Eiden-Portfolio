@@ -61,6 +61,48 @@ An immersive, single-page creative portfolio website for **EIDEN CREATIVE LAB**,
 4. **Layering & Transparency Masking**:
    - Banner layers (like `Eiden 22.png`) utilize native transparent corners with `filter: drop-shadow` in CSS rather than browser box-shadow outlines. This allows background elements to seamlessly show through their rounded corners.
 
+
+## 🔧 Manual Customization & Tuning
+
+Here is how you can adjust the key layouts, overlaps, and heights yourself:
+
+### 1. Adjusting the Joint Image Height (Stickers Row)
+To change how tall the joint sticker images (`Eiden 23` & `24`) are:
+1. Open [styles/OurProcess.module.css](file:///c:/Users/Amaan/Downloads/Eiden%20Portfolio/styles/OurProcess.module.css).
+2. Locate the `.stickerCard` class and modify the `height` property (e.g., change `50vw` to `45vw` to make it shorter, or `60vw` to make it taller):
+   ```css
+   .stickerCard {
+     width: 100%;
+     height: 50vw; /* <-- Modify this value to scale height with screen width */
+     overflow: hidden;
+     display: block;
+   }
+   ```
+3. To change its height for screens wider than `1920px`, modify the pixel value inside the `@media (min-width: 1920px)` block at the bottom of the file:
+   ```css
+   @media (min-width: 1920px) {
+     .stickerCard {
+       height: 960px; /* <-- Modify this pixel cap */
+     }
+   }
+   ```
+
+### 2. Moving the Image Below the "Our Process" Section Up/Down (Overlap)
+To manually adjust how much the mockup transition banner (`Eiden 25.png`) overlaps the pink process strokes:
+1. Open [styles/OurProcess.module.css](file:///c:/Users/Amaan/Downloads/Eiden%20Portfolio/styles/OurProcess.module.css).
+2. Locate the `.bottomBanner` class.
+3. Modify the negative `margin-top` value (a larger negative number like `-26vw` moves it higher/overlaps more; a smaller negative number like `-18vw` moves it lower):
+   ```css
+   .bottomBanner {
+     width: 100%;
+     position: relative;
+     z-index: 4;
+     display: block;
+     overflow: hidden;
+     margin-top: -23vw; /* <-- Increase/decrease this value to adjust the overlap */
+   }
+   ```
+
 ---
 
 ## 🚀 Getting Started
