@@ -2,6 +2,9 @@
   padding: 2rem 0 var(--space-xl) 0; /* Reduced top padding to close the gap between Eiden 21 and 22 */
   background-color: var(--bg-color);
   color: var(--text-color);
+  position: relative;
+  overflow: hidden; /* Prevents background stroke graphics from causing horizontal scrollbars */
+  width: 100%;
 }
 
 .bannerContainer {
@@ -12,7 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 2; /* Render on top of stickersRow to overlap it */
+  z-index: 3; /* Render on top of stickersRow to overlap it */
 }
 
 .processBannerImg {
@@ -30,16 +33,13 @@
   width: 100%;
   margin-top: -5.5%; /* Overlaps below Eiden 22 dynamically relative to container width */
   position: relative;
-  z-index: 1;
+  z-index: 1; /* Lower than bannerContainer and contentContainer to render behind them */
 }
 
 .stickerCard {
   width: 100%;
-  aspect-ratio: 1920 / 2146; /* Unified aspect ratio to make sizes exactly equal */
+  height: 50vw; /* Adjust this value to change height dynamically */
   overflow: hidden;
-  border-radius: 0; /* Sharp edges */
-  border: none; /* No border */
-  box-shadow: none; /* No shadow */
   display: block;
 }
 
@@ -51,84 +51,164 @@
 }
 
 
+.contentContainer {
+  position: relative;
+  width: 100%;
+  background-color: #010101;
+  padding-top: clamp(8rem, 15vw, 16rem); /* Substantial visual spacing above OUR PROCESS! title */
+  padding-bottom: 4vw; /* Reduced to bring PRODUCTION! description close to the bottom transition banner */
+  overflow: visible; /* Let upper strokes overlap the stickers row above */
+  z-index: 2; /* Sit on top of stickersRow so strokes overlap it */
+}
+
+.stroke {
+  position: absolute;
+  pointer-events: none;
+  height: auto;
+  z-index: 1;
+}
+
+.ulp {
+  top: -44vw; /* Shifts top-left stroke up to overlap stickers row */
+  left: 0; /* Pinned back to screen edge */
+  width: 35%; /* Expanded width to sweep inward */
+  height: 82vw; /* Stretches the stroke vertically to reach the Ideation mark */
+  transform: scaleY(-1); /* Flips canvas vertically to position curves at top */
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.urp {
+  top: -44vw; /* Shifts top-right stroke up to overlap stickers row */
+  right: 0; /* Pinned back to screen edge */
+  width: 38%; /* Expanded width to sweep inward */
+  height: 82vw; /* Stretches the stroke vertically to reach the Ideation mark */
+  transform: scaleY(-1); /* Flips canvas vertically to position curves at top */
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.llp {
+  bottom: -45vw; /* Pulls lower-left stroke down to hide the flat cut-off */
+  left: -3vw; /* Pinned back to screen edge */
+  width: 38%; /* Expanded width to sweep inward */
+  height: 70vw; /* Stretches the stroke vertically to reach the Testing mark symmetrically */
+  transform: scaleY(-1); /* Flips canvas vertically to position straight lines at bottom */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.lrp {
+  bottom: -45vw; /* Pulls lower-right stroke down to hide the flat cut-off */
+  right: -3vw; /* Pinned back to screen edge */
+  width: 42%; /* Expanded width to sweep inward */
+  height: 70vw; /* Stretches the stroke vertically to reach the Testing mark symmetrically */
+  transform: scaleY(-1); /* Flips canvas vertically to position straight lines at bottom */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+
 .mainTitle {
-  font-size: clamp(3rem, 10vw, 12rem); /* 193px */
+  font-family: var(--font-bebas);
+  font-weight: 400; /* Fixed: uses native Bebas Neue regular weight to prevent faux bolding */
+  text-transform: uppercase;
+  font-size: clamp(2.2rem, 7vw, 7.5rem);
   text-align: center;
-  margin-bottom: var(--space-xl);
+  margin-top: 0;
+  margin-bottom: clamp(1.5rem, 3vw, 3rem);
   color: var(--pure-white);
+  white-space: nowrap;
 }
 
 .timeline {
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
-  max-width: 900px;
-  margin: 0 auto;
+  align-items: center;
+  width: 100%;
 }
 
 .stepContainer {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: var(--space-md);
-}
-
-.markerContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-}
-
-.diamondMarker {
-  width: 38px;
-  height: 38px;
-  background-color: #FBFBFB;
-  transform: rotate(-45deg);
-  border: var(--border-thick);
-  z-index: 2;
-}
-
-.line {
-  position: absolute;
-  top: 38px;
-  bottom: -64px; /* Matches stepContainer gap */
-  width: 4px;
-  background-color: #FBFBFB;
-  z-index: 1;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
+  text-align: center;
+  width: 100%;
 }
 
 .stepTitle {
-  font-size: clamp(2rem, 5vw, 7.6rem); /* 122px */
+  font-family: var(--font-bebas);
+  font-weight: 400; /* Fixed: uses native Bebas Neue regular weight to prevent faux bolding */
+  text-transform: uppercase;
+  font-size: clamp(1.8rem, 4vw, 4.5rem);
   color: var(--pure-white);
   line-height: 1;
+  text-align: center;
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+  white-space: nowrap;
 }
 
 .stepDesc {
   font-family: var(--font-gotham);
   font-weight: 300;
-  font-size: clamp(1.1rem, 1.8vw, 2.7rem); /* 43px */
-  line-height: 1.3;
+  font-size: clamp(0.9rem, 1.25vw, 1.25rem); /* Balanced font size ensures lines don't wrap prematurely */
+  line-height: 1.6;
   color: var(--text-muted);
-  white-space: pre-line;
+  text-align: center;
+  max-width: 1456px;
+  margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .stepContainer {
-    grid-template-columns: 50px 1fr;
-    gap: var(--space-sm);
+.diamondSeparator {
+  width: clamp(16px, 2.5vw, 24px);
+  height: clamp(16px, 2.5vw, 24px);
+  background-color: #FBFBFB;
+  transform: rotate(-45deg);
+  margin: clamp(2.5rem, 4vw, 4.5rem) auto;
+  display: block;
+}
+
+.bottomBanner {
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  display: block;
+  overflow: hidden;
+  margin-top: -23vw; /* <--- ADD THIS LINE (Adjust the number to pull it higher or lower) */
+}
+
+.bottomBannerImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Zoom & Ultra-wide screen alignment lock */
+@media (min-width: 1920px) {
+  .stickerCard {
+    height: 960px;
   }
-  .diamondMarker {
-    width: 25px;
-    height: 25px;
+  .contentContainer {
+    padding-bottom: 77px;
   }
-  .line {
-    top: 25px;
-    bottom: -32px;
+  .ulp {
+    top: -845px;
+    left: 192px;
+    height: 1574px;
+  }
+  .urp {
+    top: -845px;
+    right: 192px;
+    height: 1574px;
+  }
+  .llp {
+    bottom: -864px;
+    left: 288px;
+    height: 1248px;
+  }
+  .lrp {
+    bottom: -864px;
+    right: 288px;
+    height: 1248px;
   }
 }
