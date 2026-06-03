@@ -1,0 +1,25 @@
+.sectionBanner {
+  background-color: var(--neon-green);
+  color: var(--pure-black);
+  padding: var(--space-sm) 0;
+  transform: rotate(-1.5deg) scale(1.02);
+  margin: var(--space-lg) 0;
+  border-top: var(--border-thick);
+  border-bottom: var(--border-thick);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marqueeContent {
+  display: inline-block;
+  font-family: var(--font-headers);
+  font-weight: 900;
+  font-size: 2rem;
+  animation: marquee 20s linear infinite;
+  text-transform: uppercase;
+}
+
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}

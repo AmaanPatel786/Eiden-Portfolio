@@ -1,0 +1,134 @@
+.section {
+  padding: 2rem 0 var(--space-xl) 0; /* Reduced top padding to close the gap between Eiden 21 and 22 */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.bannerContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2; /* Render on top of stickersRow to overlap it */
+}
+
+.processBannerImg {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0px 20px 40px rgba(0,0,0,0.5));
+}
+
+.stickersRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0; /* Joint together with no space */
+  width: 100%;
+  margin-top: -5.5%; /* Overlaps below Eiden 22 dynamically relative to container width */
+  position: relative;
+  z-index: 1;
+}
+
+.stickerCard {
+  width: 100%;
+  aspect-ratio: 1920 / 2146; /* Unified aspect ratio to make sizes exactly equal */
+  overflow: hidden;
+  border-radius: 0; /* Sharp edges */
+  border: none; /* No border */
+  box-shadow: none; /* No shadow */
+  display: block;
+}
+
+.stickerCardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.mainTitle {
+  font-size: clamp(3rem, 10vw, 12rem); /* 193px */
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  color: var(--pure-white);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.stepContainer {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: var(--space-md);
+}
+
+.markerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.diamondMarker {
+  width: 38px;
+  height: 38px;
+  background-color: #FBFBFB;
+  transform: rotate(-45deg);
+  border: var(--border-thick);
+  z-index: 2;
+}
+
+.line {
+  position: absolute;
+  top: 38px;
+  bottom: -64px; /* Matches stepContainer gap */
+  width: 4px;
+  background-color: #FBFBFB;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.stepTitle {
+  font-size: clamp(2rem, 5vw, 7.6rem); /* 122px */
+  color: var(--pure-white);
+  line-height: 1;
+}
+
+.stepDesc {
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: clamp(1.1rem, 1.8vw, 2.7rem); /* 43px */
+  line-height: 1.3;
+  color: var(--text-muted);
+  white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+  .stepContainer {
+    grid-template-columns: 50px 1fr;
+    gap: var(--space-sm);
+  }
+  .diamondMarker {
+    width: 25px;
+    height: 25px;
+  }
+  .line {
+    top: 25px;
+    bottom: -32px;
+  }
+}

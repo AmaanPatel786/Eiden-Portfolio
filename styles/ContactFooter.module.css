@@ -1,0 +1,170 @@
+.contactSection {
+  position: relative;
+  background-color: var(--bg-color); /* #010101 */
+  min-height: 85vh;
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Corner Arc Containers */
+.arcContainer {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.arcSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.topArcLeft {
+  top: 0;
+  left: 0;
+}
+
+.topArcRight {
+  top: 0;
+  right: 0;
+}
+
+.bottomArcLeft {
+  bottom: -50px;
+  left: -50px;
+  width: min(500px, 45vw);
+  height: min(400px, 35vw);
+}
+
+.bottomArcRight {
+  bottom: -50px;
+  right: -50px;
+  width: min(500px, 45vw);
+  height: min(400px, 35vw);
+}
+
+.arcImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+/* Content Layout */
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-bebas);
+  font-size: clamp(3rem, 8vw, 6.5rem); /* Bebas Neue styling */
+  color: var(--pure-white);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.diamond {
+  width: 16px;
+  height: 16px;
+  background-color: var(--pure-white);
+  transform: rotate(-45deg);
+  margin: var(--space-sm) 0;
+}
+
+.buttonRow {
+  display: flex;
+  gap: var(--space-xl);
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-md);
+  flex-wrap: wrap;
+}
+
+/* Custom Shape Button - Wrapper */
+.btnWrapper {
+  position: relative;
+  padding-top: 35px; /* Creates vertical space for the top circle */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform var(--transition-fast);
+}
+
+.btnWrapper:hover {
+  transform: scale(1.05);
+}
+
+/* Centered Top Tab containing the circular outline brand icon */
+.btnTab {
+  position: absolute;
+  top: 0px;
+  width: 110px;
+  height: 70px;
+  background-color: #F5F1F1;
+  border-radius: 80px 80px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  padding-bottom: 25px; /* Shunts the icon slightly up */
+}
+
+/* Bottom pill container */
+.btnPill {
+  background-color: #F5F1F1;
+  border-radius: 89px; /* Pill layout */
+  padding: 1.2rem 3rem;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+.btnPill span {
+  font-family: var(--font-gotham);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #151515; /* Dark gray/black label text */
+  letter-spacing: -0.02em;
+}
+
+/* Brand Icon styling (blue outlines) */
+.brandIcon {
+  width: 38px;
+  height: 38px;
+  color: #0033ff; /* Deep solid blue */
+  stroke-width: 2.2;
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 6rem 0;
+  }
+  .arcContainer {
+    width: 250px;
+    height: 250px;
+  }
+  .buttonRow {
+    gap: var(--space-lg);
+  }
+  .btnPill {
+    min-width: 260px;
+    padding: 1rem 2rem;
+  }
+}

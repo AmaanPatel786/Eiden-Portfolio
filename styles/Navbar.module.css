@@ -1,0 +1,61 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(12, 12, 12, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--card-border);
+  transition: padding var(--transition-fast), box-shadow var(--transition-fast);
+  padding: 20px 0;
+}
+
+.sticky {
+  padding: 10px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background-color: rgba(12, 12, 12, 0.95);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  font-family: var(--font-headers);
+  font-weight: 900;
+  font-size: 1.8rem;
+  background: var(--pure-black);
+  color: var(--text-color);
+  padding: var(--space-xs) var(--space-sm);
+  border: 2px solid var(--neon-green);
+  letter-spacing: -0.05em;
+}
+
+.navLinks {
+  display: flex;
+  gap: var(--space-md);
+  list-style: none;
+}
+
+.navLinks a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-color);
+  transition: color var(--transition-fast);
+}
+
+.navLinks a:hover {
+  color: var(--neon-green);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Can be enhanced with a mobile menu overlay if desired */
+  }
+}

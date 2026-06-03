@@ -1,0 +1,97 @@
+.section {
+  padding: var(--space-lg) 0;
+}
+
+.sectionHeader {
+  font-size: 3rem;
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.headerHighlight {
+  background-color: var(--hot-pink);
+  color: var(--text-color);
+  padding: 0.2rem var(--space-sm);
+  border: var(--border-thick);
+  display: inline-block;
+  transform: rotate(1deg);
+  box-shadow: 6px 6px 0px var(--pure-black);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: var(--border-thick);
+  border-radius: var(--br-card);
+  overflow: hidden;
+  box-shadow: 6px 6px 0px var(--pure-black);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 10px 10px 0px var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.mediaContainer {
+  height: 220px;
+  background-color: var(--pure-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: var(--border-thin);
+}
+
+.emoji {
+  font-size: 4.5rem;
+  filter: drop-shadow(4px 4px 0px var(--pure-black));
+}
+
+.meta {
+  padding: var(--space-sm);
+}
+
+.title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.buyBtn {
+  background-color: var(--pure-black);
+  color: var(--text-color);
+  border: 2px solid var(--accent-color);
+  padding: 0.2rem 0.8rem;
+  font-family: var(--font-headers);
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.buyBtn:hover {
+  background-color: var(--accent-color);
+  color: var(--pure-black);
+}

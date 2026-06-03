@@ -1,0 +1,111 @@
+.gallery {
+  padding: var(--space-lg) 0;
+}
+
+.sectionHeader {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+.headerHighlight {
+  background-color: var(--cyber-purple);
+  color: var(--text-color);
+  padding: 0.2rem var(--space-sm);
+  border: var(--border-thick);
+  display: inline-block;
+  transform: rotate(1deg);
+  box-shadow: 6px 6px 0px var(--pure-black);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  display: inline-flex;
+  font-family: var(--font-headers);
+  font-weight: 700;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: var(--border-thick);
+  box-shadow: 3px 3px 0px var(--pure-black);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.filterBtn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px var(--pure-black);
+  color: var(--neon-green);
+}
+
+.activeBtn {
+  background-color: var(--neon-green);
+  color: var(--pure-black);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-md);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: var(--border-thick);
+  border-radius: var(--br-card);
+  overflow: hidden;
+  box-shadow: 6px 6px 0px var(--pure-black);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0px var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.visualPlaceholder {
+  height: 250px;
+  background-color: var(--pure-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: var(--border-thin);
+}
+
+.emoji {
+  font-size: 5rem;
+  filter: drop-shadow(4px 4px 0px var(--pure-black));
+}
+
+.info {
+  padding: var(--space-sm);
+}
+
+.categoryBadge {
+  font-family: var(--font-mono);
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  margin: var(--space-xs) 0;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

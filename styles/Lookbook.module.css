@@ -1,0 +1,279 @@
+.wrapper {
+  margin: -6rem 0 2rem 0 !important; /* Pull up to sit behind FruitTwoTees bottom curve, 2rem bottom margin */
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--pure-white);
+  border-bottom: 2px solid var(--card-border);
+  padding-bottom: var(--space-sm);
+}
+
+.gridCollage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md);
+}
+
+.customCollage {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Uniform vertical gap matching the expected design */
+  width: 100%;
+  max-width: 100%;
+}
+
+.fullWidthCard,
+.halfWidthCard,
+.thirdWidthCard,
+.bottomBannerCard {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: var(--br-figma-sm); /* Using 35px border-radius standard */
+  background-color: var(--pure-black);
+}
+
+.fullWidthCard img,
+.halfWidthCard img,
+.thirdWidthCard img,
+.bottomBannerCard img {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block;
+}
+
+.twoColumnRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px; /* Uniform horizontal gap between adjacent columns */
+  width: calc(100% - 48px); /* Centered and aligned (24px margins on each side) */
+  margin: 0 auto;
+}
+
+.threeColumnRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px; /* Uniform horizontal gap between adjacent columns */
+  width: calc(100% - 48px); /* Centered and aligned (24px margins on each side) */
+  margin: 0 auto;
+}
+
+/* Aspect Ratio Utilities to keep heights perfectly uniform and prevent uneven spacing */
+.aspect1_89 {
+  aspect-ratio: 1920 / 1016;
+}
+
+.aspect1 {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect1_5 {
+  aspect-ratio: 1956 / 1299;
+}
+
+.aspect3_5 {
+  aspect-ratio: 3 / 5;
+}
+
+.aspect2_58 {
+  aspect-ratio: 1834 / 710;
+}
+
+.aspect3_4 {
+  aspect-ratio: 3 / 4;
+}
+
+.aspect2_1 {
+  aspect-ratio: 3668 / 2382;
+}
+
+/* Last Image Fade black transition overlay */
+.bottomBannerCard {
+  position: relative;
+}
+
+.innerWidthBanner {
+  width: calc(100% - 48px) !important;
+  margin: 0 auto !important;
+}
+
+@media (max-width: 768px) {
+  .innerWidthBanner {
+    width: calc(100% - 32px) !important;
+  }
+}
+
+.gradientOverlayBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: clamp(60px, 12vw, 200px);
+  background: linear-gradient(to bottom, transparent 30%, #010101 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: -4rem 0 1.5rem 0 !important; /* Adjusted pull-up margin for mobile curves, 1.5rem bottom margin */
+  }
+  .customCollage {
+    gap: 16px;
+  }
+  .twoColumnRow {
+    grid-template-columns: 1fr; /* Stack on mobile/tablet */
+    width: calc(100% - 32px); /* 16px margins on mobile/tablet */
+    gap: 16px;
+  }
+  .threeColumnRow {
+    grid-template-columns: 1fr; /* Stack on mobile/tablet */
+    gap: 16px;
+    width: calc(100% - 32px); /* 16px margins on mobile/tablet */
+  }
+}
+
+.collageCard {
+  background-color: var(--card-bg);
+  border: var(--border-thick);
+  border-radius: var(--br-figma-sm);
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform var(--transition-fast);
+}
+
+.collageCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--figma-pink);
+}
+
+.collageImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.croppedImg {
+  transform: scale(1.05);
+}
+
+.gridModels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.modelCard {
+  background-color: var(--card-bg);
+  border: var(--border-thick);
+  border-radius: var(--br-figma-sm);
+  padding: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modelPlaceholder {
+  height: 500px;
+  background-color: var(--pure-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.modelImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lookbookBanner {
+  width: 100%;
+  border: var(--border-thick);
+  border-radius: var(--br-figma-sm);
+  overflow: hidden;
+}
+
+.bannerImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gridPolaroids {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+}
+
+.polaroid {
+  background-color: var(--figma-gray);
+  padding: var(--space-sm);
+  border: var(--border-thick);
+  box-shadow: 8px 8px 0px var(--pure-black);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  transform: rotate(var(--rotate-angle, -1.5deg));
+  transition: transform var(--transition-fast);
+}
+
+.polaroid:nth-child(2n) {
+  --rotate-angle: 2deg;
+}
+
+.polaroid:nth-child(3n) {
+  --rotate-angle: -3deg;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+.polaroidMedia {
+  height: 300px;
+  background-color: var(--pure-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.polaroidImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.polaroidMeta {
+  padding: var(--space-xs) 0;
+  text-align: center;
+}
+
+.polaroidText {
+  font-family: var(--font-mono);
+  color: var(--pure-black);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .gridModels {
+    grid-template-columns: 1fr;
+  }
+  .modelPlaceholder {
+    height: 350px;
+  }
+}

@@ -1,0 +1,103 @@
+.hero {
+  position: relative;
+  min-height: auto;
+  padding: 6rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  text-align: center;
+}
+
+.bannerImgContainer {
+  width: 100%;
+  max-width: 1818px;
+  aspect-ratio: 1818 / 1013;
+  margin: 0 auto 3rem auto;
+  border-radius: 30px; /* Exact Frame 2 border-radius */
+  overflow: hidden;
+  border: var(--border-thick);
+  box-shadow: 0px 20px 40px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.bannerImg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.title {
+  font-family: var(--font-bebas);
+  font-weight: 900; /* Extra bold */
+  font-size: clamp(2.8rem, 6.6vw, 7.8rem); /* Slightly larger and more prominent */
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--pure-white);
+  margin-bottom: var(--space-md);
+  max-width: 1700px;
+  width: 100%;
+}
+
+.highlight {
+  color: #FAFF00; /* Yellow font as requested */
+  font-weight: 900;
+}
+
+.tagline {
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: clamp(1.1rem, 2.5vw, 3rem); /* 48px at 1920px width */
+  line-height: 1.25;
+  color: var(--pure-white);
+  max-width: 1400px;
+  margin: 0 auto var(--space-sm) auto;
+}
+
+.diamond {
+  width: 38px;
+  height: 38px;
+  background-color: #FBFBFB;
+  transform: rotate(-45deg);
+  margin: var(--space-md) auto;
+  border: var(--border-thick);
+}
+
+.subTagline {
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: clamp(1.1rem, 2.5vw, 3rem); /* 48px at 1920px width */
+  line-height: 1.25;
+  color: var(--pure-white);
+  max-width: 1128px;
+  margin: 0 auto 2.5rem auto;
+}
+
+/* Spacer styles */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 0 0 0;
+  }
+  .bannerImgContainer {
+    margin-bottom: 2rem;
+  }
+  .diamond {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1920px;
+  width: 100%;
+}

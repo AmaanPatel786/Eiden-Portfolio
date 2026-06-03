@@ -1,0 +1,116 @@
+.about {
+  padding: var(--space-lg) 0;
+}
+
+.sectionHeader {
+  font-size: 3rem;
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.headerHighlight {
+  background-color: var(--hot-pink);
+  color: var(--pure-black);
+  padding: 0.2rem var(--space-sm);
+  border: var(--border-thick);
+  display: inline-block;
+  transform: rotate(-1.5deg);
+  box-shadow: 6px 6px 0px var(--pure-black);
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.portraitWrapper {
+  border: var(--border-thick);
+  border-radius: var(--br-card);
+  overflow: hidden;
+  background-color: var(--pure-black);
+  box-shadow: var(--shadow-hot-pink);
+  transition: transform var(--transition-normal);
+}
+
+.portraitWrapper:hover {
+  transform: scale(1.01) rotate(-1deg);
+}
+
+.portraitGraphics {
+  height: 380px;
+  background: radial-gradient(circle, var(--hot-pink), var(--cyber-purple));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portraitEmoji {
+  font-size: 8rem;
+  filter: drop-shadow(4px 4px 0px var(--pure-black));
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.bioCard {
+  background-color: var(--card-bg);
+  border: var(--border-thick);
+  border-radius: var(--br-card);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-black);
+}
+
+.bioTitle {
+  color: var(--neon-green);
+  margin-bottom: var(--space-sm);
+  font-size: 1.8rem;
+}
+
+.bioText {
+  margin-bottom: var(--space-sm);
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.subText {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.divider {
+  border: 0;
+  border-top: 2px solid var(--card-border);
+  margin: var(--space-md) 0;
+}
+
+.details {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.detailItem strong {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 992px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  
+  .portraitGraphics {
+    height: 300px;
+  }
+}

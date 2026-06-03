@@ -1,0 +1,111 @@
+.block {
+  background-color: var(--figma-yellow); /* #FFE600 */
+  color: var(--pure-black);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+  /* Overflow hidden clips the bottom of the models image to the card's rounded borders */
+  overflow: hidden !important;
+  border-radius: var(--br-figma) !important; /* Force exact 89px border-radius matching expected mockup */
+  position: relative;
+  z-index: 5; /* Sit on top of GalleryShowcase last image */
+  /* Negative top margin pulls the card up to overlap the last image of GalleryShowcase */
+  margin-top: -8.5rem !important;
+  margin-bottom: 0 !important; /* Zero margin-bottom to touch the Lookbook section directly */
+  /* Top padding for text, side/bottom is 0 so the image can touch the borders edge-to-edge */
+  padding: 4.5rem 0 0 0 !important;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 var(--space-md);
+  position: relative;
+  z-index: 2; /* Render on top of image background stripes */
+}
+
+.fruitTitle {
+  font-family: var(--font-bebas);
+  font-weight: 400; /* Use Bebas Neue's native weight without browser-synthesized bold distortion */
+  letter-spacing: 0.02em;
+  font-size: clamp(2.5rem, 5.2vw, 96px); /* Heavy Bebas Neue Title matching screen scale */
+  line-height: 0.95;
+  color: var(--pure-black);
+  text-transform: uppercase;
+  margin: 0 0 0.25rem 0;
+}
+
+.subHead {
+  font-family: var(--font-gotham);
+  font-weight: 700; /* Crisp native Montserrat Bold */
+  font-size: clamp(1.2rem, 2.2vw, 36px);
+  color: var(--pure-black);
+  margin: 0 0 1rem 0;
+}
+
+.description {
+  font-family: var(--font-gotham);
+  font-weight: 300; /* Gotham Light equivalent */
+  font-size: clamp(1.1rem, 1.8vw, 32px); /* Proportional Gotham Light size matching expected design scale */
+  line-height: 1.25; /* Tighter streetwear line-height */
+  color: var(--pure-black);
+  max-width: 33em; /* Constrains description to wrap exactly at 'always' across all viewport scales */
+  margin: 0;
+}
+
+.imageContainer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  z-index: 1; /* Render behind text */
+  margin-top: -15vw; /* Pulls the image up, overlapping top background stripes behind text and closing the gap */
+}
+
+@media (min-width: 1920px) {
+  .imageContainer {
+    margin-top: -280px; /* Cap top negative margin on ultra-wide screens */
+  }
+}
+
+.teeImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Tablet and mobile views */
+@media (max-width: 992px) {
+  .block {
+    margin-top: -6rem !important;
+    padding-top: 3.5rem !important;
+    border-radius: var(--br-figma-sm) !important;
+  }
+  
+  .textContainer {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .imageContainer {
+    margin-top: -10vw; /* Reduced negative margin on tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .block {
+    margin-top: -4rem !important;
+    padding-top: 2.5rem !important;
+    border-radius: var(--br-figma-sm) !important;
+  }
+
+  .textContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  .imageContainer {
+    margin-top: -6vw; /* Reduced negative margin on mobile */
+  }
+}

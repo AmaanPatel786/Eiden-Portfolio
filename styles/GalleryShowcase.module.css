@@ -1,0 +1,60 @@
+.sectionWrapper {
+  width: 100%;
+  max-width: 1920px; /* Cap at body size to align with the rest of the site on zoom out */
+  margin: 0 auto; /* Center the wrapper in the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #010101;
+  /* Top padding creates the black transition gap at the start of section */
+  padding-top: clamp(3rem, 6vw, 6rem);
+  padding-bottom: 0;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top soft fade-in transition from black */
+.imageContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: clamp(60px, 12vw, 200px); /* Proportional soft fade gradient */
+  background: linear-gradient(to bottom, #010101 0%, rgba(1, 1, 1, 0.8) 25%, rgba(1, 1, 1, 0) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Bottom soft fade-out transition to black */
+.imageContainer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: clamp(60px, 12vw, 200px); /* Proportional soft fade gradient */
+  background: linear-gradient(to top, #010101 0%, rgba(1, 1, 1, 0.8) 25%, rgba(1, 1, 1, 0) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.showcaseImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Disable the bottom fade transition from the last image's bottom to allow direct yellow card overlap */
+.imageContainer:last-child::after {
+  display: none !important;
+}

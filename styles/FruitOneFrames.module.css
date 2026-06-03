@@ -1,0 +1,116 @@
+.block {
+  background-color: var(--figma-pink); /* #FF005C */
+  color: var(--pure-black);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+  /* Override global figma-section-block overflow: hidden to allow the frame mockup to bleed */
+  overflow: visible !important;
+  border-radius: var(--br-figma-sm) !important; /* Force exact 35px border-radius matching screen */
+  padding: 4.5rem var(--space-md) !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.18fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.imageColumn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  /* Overlaps the frame above and below the pink block card container */
+  margin-top: -8.5rem;
+  margin-bottom: -8.5rem;
+}
+
+.frameImg {
+  width: 100%;
+  max-width: 445px;
+  height: auto;
+  display: block;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.55);
+  border-radius: 4px; /* Soft rounding matching frames */
+  transition: transform var(--transition-normal);
+}
+
+.frameImg:hover {
+  transform: translateY(-8px) scale(1.01);
+}
+
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.fruitTitle {
+  font-family: var(--font-bebas);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5.2vw, 96px); /* Big Bebas Neue Title matching screen scale */
+  line-height: 0.95;
+  color: var(--pure-black);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.subHead {
+  font-family: var(--font-gotham);
+  font-weight: 700;
+  font-size: clamp(1.2rem, 2.2vw, 36px); /* Bold Gotham Subheading */
+  color: var(--pure-black);
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.paragraph {
+  font-family: var(--font-gotham);
+  font-weight: 400; /* Regular weight */
+  font-size: clamp(0.95rem, 1.5vw, 24px); /* Proportional reading size */
+  line-height: 1.35;
+  color: var(--pure-black);
+  margin: 0;
+}
+
+/* Tablet and mobile views */
+@media (max-width: 992px) {
+  .block {
+    padding: 3rem 1.5rem !important;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .imageColumn {
+    margin-top: -6rem; /* Keep top bleed style on mobile */
+    margin-bottom: 0;
+  }
+
+  .frameImg {
+    max-width: 360px;
+  }
+  
+  .textColumn {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageColumn {
+    margin-top: -5rem;
+  }
+
+  .frameImg {
+    max-width: 280px;
+  }
+}

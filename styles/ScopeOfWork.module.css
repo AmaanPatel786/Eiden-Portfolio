@@ -1,0 +1,98 @@
+.block {
+  background-color: var(--figma-lime);
+  color: var(--pure-black);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.bebasTitle {
+  font-size: clamp(3rem, 7.5vw, 9.5rem); /* 153px */
+  line-height: 0.85;
+  color: var(--pure-black);
+}
+
+.cross {
+  font-family: var(--font-bebas);
+  font-size: clamp(2rem, 5vw, 6.5rem); /* 103px */
+  line-height: 0.85;
+  color: #FF1515; /* Red X */
+}
+
+.scopeTitle {
+  font-family: var(--font-gotham);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 3rem); /* 48px */
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+}
+
+.introText {
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: clamp(1.1rem, 2vw, 2.7rem); /* 43px */
+  line-height: 1.2;
+  color: var(--pure-black);
+  max-width: 1100px;
+  margin-bottom: var(--space-lg);
+}
+
+.collageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: var(--space-lg);
+}
+
+.imageCard {
+  background-color: var(--pure-black);
+  padding: var(--space-xs);
+  border: var(--border-thick);
+  border-radius: var(--br-figma-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  transform: rotate(var(--rot, -1deg));
+}
+
+.imageCard:nth-child(2n) {
+  --rot: 2deg;
+}
+
+.media {
+  height: 250px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.label {
+  font-family: var(--font-mono);
+  color: var(--pure-white);
+  font-size: 0.75rem;
+  word-break: break-all;
+}
+
+.bodyText {
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: clamp(1.1rem, 2vw, 2.7rem); /* 43px */
+  line-height: 1.2;
+  color: var(--pure-black);
+  max-width: 1100px;
+}
