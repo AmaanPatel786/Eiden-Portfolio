@@ -1,5 +1,5 @@
 .section {
-  padding: 2rem 0 var(--space-xl) 0; /* Reduced top padding to close the gap between Eiden 21 and 22 */
+  padding: 2rem 0 0 0; /* Removed bottom padding so bottomBanner touches the bottom of the section */
   background-color: var(--bg-color);
   color: var(--text-color);
   position: relative;

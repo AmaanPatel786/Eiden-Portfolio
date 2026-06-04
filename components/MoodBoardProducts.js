@@ -87,10 +87,17 @@ export default function MoodBoardProducts() {
 
   return (
     <section className={styles.section} id="moodboard">
-      <div className="container">
-        <h2 className={styles.mainTitle}>Mood board</h2>
+      {/* Background Decorative Blue Strokes */}
+      <img src="/MoodBoardLeftBlue.png" alt="" className={`${styles.stroke} ${styles.leftStroke}`} />
+      <img src="/MoodBoardRightBlue.png" alt="" className={`${styles.stroke} ${styles.rightStroke}`} />
+      <div className={styles.topFadeOverlay}></div>
+
+      <div className="container" style={{ position: 'relative', zIndex: 3 }}>
+        <h2 className={styles.mainTitle}>Mood Board</h2>
+        <div className={styles.diamondSeparator}></div>
         <p className={styles.subtitle}>
-          A curation of products that can be explored for the merchandise
+          A curation of products that<br />
+          can be explored for the jawan merchandise
         </p>
 
         {/* Tab Links */}

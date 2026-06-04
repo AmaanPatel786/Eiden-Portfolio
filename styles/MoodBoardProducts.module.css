@@ -2,19 +2,73 @@
   padding: var(--space-xl) 0;
   background-color: var(--bg-color);
   color: var(--text-color);
+  position: relative;
+  overflow: hidden; /* Prevents background stroke graphics from causing horizontal scrollbars */
+}
+
+.stroke {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.leftStroke {
+  left: 1vw; /* Pinned further left to offset wider footprint */
+  top: -51vw; /* Pulled further upwards to match the 2nd image layout */
+  width: 66vw; /* Expanded width to flatten curves */
+  height: auto;
+  opacity: 0.95;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12%);
+}
+
+.rightStroke {
+  right: 1vw; /* Pinned further right to offset wider footprint */
+  top: -55vw; /* Pulled further upwards to compensate for larger image height and match left stroke bottom level */
+  width: 66vw; /* Expanded width to flatten curves */
+  height: auto;
+  opacity: 0.95;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12%);
+}
+
+.topFadeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: clamp(120px, 18vw, 240px); /* Covers the top intersection region down to the title */
+  background: linear-gradient(to bottom, var(--bg-color) 0%, rgba(1, 1, 1, 0) 100%);
+  pointer-events: none;
+  z-index: 2;
 }
 
 .mainTitle {
+  font-family: var(--font-bebas);
+  font-weight: 400; /* Prevent faux bolding on Bebas Neue */
   font-size: clamp(3rem, 10vw, 12rem); /* 202px */
   text-align: center;
   color: var(--pure-white);
   line-height: 1;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+.diamondSeparator {
+  width: 20px;
+  height: 20px;
+  background-color: var(--pure-white);
+  transform: rotate(-45deg);
+  margin: 0 auto clamp(1.5rem, 3vw, 3rem) auto;
+  display: block;
 }
 
 .subtitle {
   font-family: var(--font-gotham);
   font-weight: 300;
   font-size: clamp(1.1rem, 2vw, 2.7rem); /* 43px */
+  line-height: 1.3;
   text-align: center;
   color: var(--text-muted);
   margin-bottom: var(--space-xl);
@@ -186,3 +240,22 @@
 .links a:hover {
   color: var(--figma-yellow);
 }
+
+/* Zoom & Ultra-wide screen alignment lock */
+@media (min-width: 1920px) {
+  .leftStroke {
+    left: 19px;
+    top: -979px;
+    width: 1267px;
+  }
+  .rightStroke {
+    right: 19px;
+    top: -1056px;
+    width: 1267px;
+  }
+  .diamondSeparator {
+    width: 20px;
+    height: 20px;
+  }
+}
+
