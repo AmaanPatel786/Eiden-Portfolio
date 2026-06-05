@@ -176,6 +176,167 @@
   z-index: -1;
 }
 
+/* ─── Hoodies Section ─── */
+.hoodieSection {
+  position: relative;
+  background-color: #000000;
+  /* Negative top margin pulls the black panel upward to cover the pink stroke bleed from phone cases */
+  margin-top: -2px;
+  padding: var(--space-xl) 0 var(--space-lg) 0;
+  z-index: 4;
+}
+
+.hoodieGrid {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-md);
+  align-items: flex-start;
+  width: 96%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hoodieMainCard {
+  border-radius: var(--br-figma-sm);
+  overflow: hidden;
+  background-color: #111;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.6);
+  display: flex;
+  /* Fixed independent width — does not affect right column height */
+  flex: 0 0 55%;
+  height: 1200px;
+  margin-top: -80px;
+}
+
+.hoodieMainImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Pin image to top so hoodie head touches the upper card border */
+  object-position: top center;
+  display: block;
+}
+
+.hoodieRightCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  /* Take remaining width after left card + gap */
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.hoodieTopCard {
+  border-radius: var(--br-figma-sm);
+  overflow: hidden;
+  background-color: #111;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.6);
+  /* Shorter than the bottom pair — matches reference where Eiden 31 is thinner */
+  flex: 4;
+  /* Allows the card to shrink below its natural content height */
+  min-height: 0;
+  display: flex;
+}
+
+.hoodieBottomPair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  /* Taller than the top card — bottom pair takes more vertical space */
+  flex: 4;
+  /* Allows the pair to shrink so it doesn't overflow the lower border */
+  min-height: 0;
+  overflow: hidden;
+}
+
+.hoodiePairCard {
+  border-radius: var(--br-figma-sm);
+  overflow: hidden;
+  background-color: #111;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.6);
+  display: flex;
+}
+
+.hoodieCardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hoodieTitle {
+  font-family: var(--font-bebas);
+  font-weight: 400;
+  font-size: clamp(4rem, 9.5vw, 11rem);
+  color: var(--figma-yellow);
+  text-align: left;
+  line-height: 0.85;
+  text-transform: uppercase;
+  margin-top: var(--space-md);
+  margin-bottom: 0;
+  /* Align left edge with the grid cards using matching width/margin */
+  width: 96%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hoodieTeeGrid {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-md);
+  width: 96%;
+  max-width: 1400px;
+  margin: var(--space-md) auto 0 auto;
+}
+
+.hoodieTeeCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  flex: 1;
+  min-width: 0;
+}
+
+.hoodieTeeCard {
+  width: 100%;
+  border-radius: var(--br-figma-sm);
+  overflow: hidden;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.6);
+  background-color: #000;
+}
+
+.hoodieTeeImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hoodieTeeTitleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  margin-top: -0.8rem;
+  margin-bottom: -0.8rem;
+}
+
+.hoodieTeeTitleText {
+  font-family: var(--font-bebas);
+  font-weight: 400;
+  font-size: clamp(9rem, 7vw, 3rem);
+  color: #00FFD1;
+  text-align: left;
+  line-height: 0.85;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.02em;
+  margin-left: 0.9rem;
+  margin-top: 0.7rem;
+}
+
 @media (max-width: 992px) {
   .bottomRow {
     grid-template-columns: 1fr;
@@ -189,6 +350,40 @@
     margin-top: var(--space-sm);
     transform: none;
     padding-right: 0;
+  }
+  .hoodieGrid {
+    grid-template-columns: 1fr;
+  }
+  .hoodieBottomPair {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hoodieTitle {
+    text-align: center;
+    padding-left: 0;
+  }
+  .hoodieTeeGrid {
+    flex-direction: column;
+  }
+  .hoodieTeeTitleCard {
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .hoodieTeeTitleText {
+    text-align: center;
+  }
+  .badgeGrid {
+    flex-direction: column;
+  }
+  .badgeTitleCard {
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .badgeTitleText {
+    text-align: center;
   }
 }
 
@@ -276,4 +471,197 @@
     padding-right: 67px;
   }
 }
+
+/* ─────────────────────────────────────────────────────────────
+   Individual Image Card Sizing (Eiden 34 to 41)
+   To manually set custom heights or crop styles:
+   - Simply change the 'height' value on the card class (e.g. height: 500px;).
+   - The image inside will automatically scale, cover, and fill the container.
+   ───────────────────────────────────────────────────────────── */
+
+/* Force all images inside card containers to fit their card size exactly */
+.hoodieTeeCard img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* Eiden 34: White hoodie front/back (Left Column, Card 1) */
+.cardEiden34 {
+  height: 550px;
+}
+.cardEiden34 img {
+  object-position: center;
+}
+
+/* Eiden 35: Graffiti hoodie (Right Column, Card 1) */
+.cardEiden35 {
+  height: 800px;
+}
+.cardEiden35 img {
+  object-position: center;
+}
+
+/* Eiden 36: Duo Winning (Left Column, Card 2) */
+.cardEiden36 {
+  /* height: 400px; */
+}
+.cardEiden36 img {
+  object-position: center;
+}
+
+/* Eiden 37: Pink Dark Side Hoodie 1 (Right Column, Card 2) */
+.cardEiden37 {
+  height: 960px;
+}
+.cardEiden37 img {
+  object-position: center;
+}
+
+/* Eiden 38: Skull Tee (Left Column, Card 3) */
+.cardEiden38 {
+  height: 1000px;
+}
+.cardEiden38 img {
+  object-position: center;
+}
+
+/* Eiden 39: Pink Dark Side Hoodie 2 (Right Column, Card 3) */
+.cardEiden39 {
+  height: 480px;
+}
+.cardEiden39 img {
+  object-position: center;
+}
+
+/* Eiden 40: Hope Butterfly Tee (Left Column, Card 4) */
+.cardEiden40 {
+  /* height: 400px; */
+}
+.cardEiden40 img {
+  object-position: center;
+}
+
+/* Eiden 41: Songs Tee (Right Column, Card 4) */
+.cardEiden41 {
+  height: 790px;
+}
+.cardEiden41 img {
+  object-position: center;
+}
+
+/* ─── Popsockets & Badges Section ─── */
+.badgeSection {
+  position: relative;
+  background-color: #000000;
+  padding: var(--space-sm) 0 var(--space-lg) 0;
+  z-index: 4;
+}
+
+.badgeGrid {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-md);
+  width: 96%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.badgeCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  flex: 1;
+  min-width: 0;
+}
+
+.badgeCard {
+  width: 100%;
+  border-radius: var(--br-figma-sm);
+  overflow: hidden;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.6);
+  background-color: #000;
+  display: flex;
+}
+
+.badgeImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.badgeTitleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0;
+  margin-top: -0.8rem;
+  margin-bottom: -0.8rem;
+}
+
+.badgeTitleText {
+  font-family: var(--font-bebas);
+  font-weight: 400;
+  font-size: clamp(3rem, 7vw, 9rem);
+  color: #FA00FF; /* Vibrant hot pink from screenshot */
+  text-align: right;
+  line-height: 0.84;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.02em;
+  margin-right: 7rem;
+  margin-bottom: 2rem;
+}
+
+/* Force all images inside badge card containers to fit their card size exactly */
+.badgeCard img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Individual Badge Image Card Sizing (Eiden 42 to 45)
+   To manually set custom heights or crop styles:
+   - Simply change the 'height' value on the card class (e.g. height: 500px;).
+   - The image inside will automatically scale, cover, and fill the container.
+   ───────────────────────────────────────────────────────────── */
+
+/* Eiden 42: Badges on black (Left Column, Card 1) */
+.cardEiden42 {
+  height: 600px;
+}
+.cardEiden42 img {
+  object-position: center;
+}
+
+/* Eiden 43: Badges on red/purple (Left Column, Card 2) */
+.cardEiden43 {
+  height: 380px;
+}
+.cardEiden43 img {
+  object-position: center;
+}
+
+/* Eiden 44: Badges on green/orange (Left Column, Card 3) */
+.cardEiden44 {
+  height: 360px;
+}
+.cardEiden44 img {
+  object-position: center;
+}
+
+/* Eiden 45: Popsockets (Right Column, Card 1) */
+.cardEiden45 {
+  height: 1002px;
+}
+.cardEiden45 img {
+  object-position: center;
+}
+
+
 
