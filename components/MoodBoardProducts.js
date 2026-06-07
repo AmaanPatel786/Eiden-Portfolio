@@ -230,15 +230,95 @@ export default function MoodBoardProducts() {
         </div>
       </div>
 
+      {/* Laptop Skins & Desk Mats Section — full-bleed black panel outside container */}
+      <div className={styles.skinMatSection}>
+        <h2 className={styles.skinMatTitle}>LAPTOP SKINS DESK MATS</h2>
+        <div className={styles.skinMatGrid}>
+          {/* Left Column */}
+          <div className={styles.skinMatCol}>
+            <div className={`${styles.skinMatCard} ${styles.cardEiden46}`}>
+              <img
+                src="/Eiden 46.png"
+                alt="Eiden Doctor Strange Laptop Skin"
+                className={styles.skinMatImg}
+              />
+            </div>
+            <div className={`${styles.skinMatCard} ${styles.cardEiden48}`}>
+              <img
+                src="/Eiden 48.png"
+                alt="Eiden Pink Anime Desk Mat"
+                className={styles.skinMatImg}
+              />
+            </div>
+            <div className={`${styles.skinMatCard} ${styles.cardEiden50}`}>
+              <img
+                src="/Eiden 50.png"
+                alt="Eiden Rick and Morty Desk Mat"
+                className={styles.skinMatImg}
+              />
+            </div>
+            <div className={`${styles.skinMatCard} ${styles.cardEiden51}`}>
+              <img
+                src="/Eiden 51.png"
+                alt="Eiden Oni Monster Desk Mat"
+                className={styles.skinMatImg}
+              />
+            </div>
+          </div>
+
+          {/* Right Column */}
+          <div className={styles.skinMatCol}>
+            <div className={`${styles.skinMatCard} ${styles.cardEiden47}`}>
+              <img
+                src="/Eiden 47.png"
+                alt="Eiden Purple Green Keyboard Mat"
+                className={styles.skinMatImg}
+              />
+            </div>
+            <div className={`${styles.skinMatCard} ${styles.cardEiden49}`}>
+              <img
+                src="/Eiden 49.png"
+                alt="Eiden Dragon Desk Mat"
+                className={styles.skinMatImg}
+              />
+            </div>
+            <div className={`${styles.skinMatCard} ${styles.cardEiden53}`}>
+              <img
+                src="/Eiden 70.png"
+                alt="Eiden Yellow Black Laptop Skin"
+                className={styles.skinMatImg}
+              />
+            </div>
+            <div className={`${styles.skinMatCard} ${styles.cardEiden52}`}>
+              <img
+                src="/Eiden 52.png"
+                alt="Eiden Green Cartoon Laptop Skin"
+                className={styles.skinMatImg}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Section title placeholder for the next bags section */}
+        <h2 className={styles.bagsTitle}>BAGS</h2>
+      </div>
+
       {/* Other Segments + Video References (back inside container) */}
       <div className="container" style={{ position: 'relative', zIndex: 3 }}>
         {/* Other Segments Exploration */}
         <div className={styles.extraBlock}>
           <div className={styles.diamondDivider}></div>
-          <h4 className={styles.extraTitle}>Other Segments for Exploration</h4>
-          <p className={styles.extraText}>
-            Hats/Caps, Clocks, Book Cover Keychains, Bandana Playing Cards, Magnet Stickers, Lunchables Bands, Tapestry Posters.
-          </p>
+          <div className={styles.extraTitleText}>
+            Other Segments that can be explored
+          </div>
+          <div className={styles.extraListText}>
+            HATS/CAPS , CLOCKS , BOOK COVER<br />
+            KEY CHAINS , BANDANA<br />
+            PLAYING CARDS , MAGNETS<br />
+            STICKERS , LUNCHABLES<br />
+            BANDS , TAPESTRY<br />
+            POSTERS
+          </div>
         </div>
 
         {/* Video references */}

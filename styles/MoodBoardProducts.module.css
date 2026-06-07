@@ -385,6 +385,20 @@
   .badgeTitleText {
     text-align: center;
   }
+  .skinMatGrid {
+    flex-direction: column;
+  }
+  .cardEiden52 {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  .skinMatTitle {
+    margin-bottom: var(--space-md);
+  }
+  .bagsTitle {
+    text-align: center;
+    margin-top: var(--space-lg);
+  }
 }
 
 .extraBlock {
@@ -393,7 +407,7 @@
   align-items: center;
   text-align: center;
   margin-top: var(--space-xl);
-  max-width: 900px;
+  max-width: 819px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -404,7 +418,7 @@
   background-color: var(--pure-white);
   transform: rotate(-45deg);
   border: var(--border-thick);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-xl);
 }
 
 .extraTitle {
@@ -415,12 +429,21 @@
   margin-bottom: var(--space-sm);
 }
 
-.extraText {
+.extraTitleText {
   font-family: var(--font-gotham);
   font-weight: 300;
-  font-size: clamp(1.1rem, 2vw, 2.7rem); /* 43px */
-  line-height: 1.3;
-  color: var(--text-muted);
+  font-size: clamp(1rem, 2vw, 2.55rem); /* Smaller size (~33px at 1920px width) */
+  line-height: 1.087;
+  color: #FFFFFF;
+  margin-bottom: 2.2rem; /* creates the gap only below the first line */
+}
+
+.extraListText {
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: clamp(1.2rem, 2.25vw, 2.7rem);
+  line-height: 1.087;
+  color: #FFFFFF;
 }
 
 .links {
@@ -660,6 +683,178 @@
   height: 1002px;
 }
 .cardEiden45 img {
+  object-position: center;
+}
+
+/* ─── Laptop Skins & Desk Mats Section ─── */
+.skinMatSection {
+  position: relative;
+  background-color: #000000;
+  padding: var(--space-md) 0 var(--space-lg) 0;
+  z-index: 4;
+}
+
+.skinMatTitle {
+  font-family: var(--font-bebas);
+  font-weight: 400;
+  font-size: clamp(4.5rem, 9.5vw, 12.5rem);
+  color: #FF005C; /* Figma pink color */
+  text-align: center;
+  line-height: 0.84;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: var(--space-lg);
+  letter-spacing: 0.02em;
+}
+
+.skinMatGrid {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-md);
+  width: 96%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.skinMatCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  flex: 1;
+  min-width: 0;
+}
+
+.skinMatCard {
+  width: 100%;
+  border-radius: var(--br-figma-sm);
+  overflow: hidden;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.6);
+  background-color: #000;
+  display: flex;
+}
+
+.skinMatImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bagsTitle {
+  font-family: var(--font-bebas);
+  font-weight: 400;
+  font-size: clamp(4.5rem, 9.5vw, 11rem);
+  color: #00FFF0; /* Vibrant cyan */
+  text-align: left;
+  line-height: 0.84;
+  text-transform: uppercase;
+  margin-top: -205px;
+  margin-bottom: 0;
+  width: 96%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 550px;
+}
+
+/* Force all images inside skinMat card containers to fit their card size exactly */
+.skinMatCard img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Individual Laptop Skin & Desk Mat Image Card Sizing (Eiden 46 to 53)
+   To manually set custom heights or crop styles:
+   - Simply change the 'height' value on the card class (e.g. height: 500px;).
+   - The image inside will automatically scale, cover, and fill the container.
+   ───────────────────────────────────────────────────────────── */
+
+/* Eiden 46: Doctor Strange Laptop Skin (Left Column, Card 1) */
+.cardEiden46 {
+  height: 610px;
+  width: 590px;
+}
+.cardEiden46 img {
+  object-position: center;
+}
+
+/* Eiden 47: Purple Green Keyboard Mat (Right Column, Card 1) */
+.cardEiden47 {
+  height: 610px;
+  width: 800px;
+  margin-left: -100px;
+  z-index: 5;   
+  position: relative;
+}
+.cardEiden47 img {
+  object-position: center;
+}
+
+/* Eiden 48: Pink Anime Desk Mat (Left Column, Card 2) */
+.cardEiden48 {
+  width: 790px;
+  height: 600px;
+  left: 77px;
+}
+.cardEiden48 img {
+  object-position: center;
+}
+
+/* Eiden 49: Dragon Desk Mat (Right Column, Card 2) */
+.cardEiden49 {
+  height: 480px;
+  width: 590px;
+  margin-left: 110px;
+  z-index: 5;   
+  position: relative;
+}
+.cardEiden49 img {
+  object-position: center;
+}
+
+/* Eiden 50: Rick & Morty Desk Mat (Left Column, Card 3) */
+.cardEiden50 {
+  height: 670px;
+  width: 790px;
+}
+.cardEiden50 img {
+  object-position: center;
+}
+
+/* Eiden 51: Oni Monster Desk Mat (Left Column, Card 4) */
+.cardEiden51 {
+  height: 900px;
+  width: 1415px;
+  margin-top: var(--space-md);
+}
+.cardEiden51 img {
+  object-position: center;
+}
+
+/* Eiden 53: Yellow Black Laptop Skin (Right Column, Card 3) */
+.cardEiden53 {
+  height: 800px;
+  width: 590px;
+  margin-left: 110px;
+}
+.cardEiden53 img {
+  object-position: center;
+}
+
+/* Eiden 52: Green Cartoon Laptop Skin (Right Column, Card 4) */
+/* This card overlaps the Oni mat (Eiden 51) on the left column */
+.cardEiden52 {
+  height: 540px;
+  width: 830px;
+  position: relative;
+  z-index: 5;
+  margin-left: -135px; /* Shift left to overlap left column by 33% */
+  margin-top: 710px; /* Pull up to overlap top half on Eiden 51 */
+}
+.cardEiden52 img {
   object-position: center;
 }
 
