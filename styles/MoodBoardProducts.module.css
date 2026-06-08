@@ -407,6 +407,32 @@
   .socksTitle {
     text-align: center;
     margin-top: var(--space-lg);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .socksGrid {
+    flex-direction: column;
+  }
+  .socksCard {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  .socksCard img {
+    height: auto !important;
+    aspect-ratio: auto !important;
+  }
+  .socksBannerContainer {
+    width: 100%;
+    margin-top: var(--space-md);
+  }
+  .socksCardEiden61 {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: var(--space-lg) !important;
   }
 }
 
@@ -415,7 +441,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: var(--space-xl);
+  margin-top: 0.1rem; /* Increase this value (default is var(--space-xl)) */
   max-width: 819px;
   margin-left: auto;
   margin-right: auto;
@@ -987,6 +1013,122 @@
   margin-left: 20px;
 }
 .bagsCardEiden57 img {
+  object-position: center;
+}
+
+/* ─── Socks Section ─── */
+.socksGrid {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-md);
+  width: 96%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.socksCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+
+.socksCard {
+  width: 100%;
+  border-radius: var(--br-figma-sm);
+  overflow: hidden;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.6);
+  background-color: #000;
+  display: flex;
+  position: relative;
+}
+
+.socksImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Force all images inside socks card containers to fit their card size exactly */
+.socksCard img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.socksBannerContainer {
+  width: 96%;
+  max-width: 1400px;
+  margin: var(--space-md) auto 0 auto;
+  position: relative;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Individual Socks Image Card Sizing (Eiden 57 to 61)
+   To manually set custom heights or crop styles:
+   - Simply change the 'height' value on the card class (e.g. height: 500px;).
+   - The image inside will automatically scale, cover, and fill the container.
+   ───────────────────────────────────────────────────────────── */
+
+/* Eiden 57: Tiger Backpack (Left Column, Card 1) */
+.socksCardEiden57 {
+  height: 920px;
+  width: 640px;
+  margin-top: 300px;
+  margin-left: 15px; /* Shift left to overlap Eiden 56 */
+}
+.socksCardEiden57 img {
+  object-position: center;
+}
+
+/* Eiden 58: Yoda Socks (Right Column, Card 1) */
+/* Overlaps on Eiden 71 (bottom left image of previous bags section) */
+.socksCardEiden58 {
+  height: 970px;
+  width: 750px;
+  margin-top: 60px; /* pulls it up past the socks section start to overlap Eiden 71 */
+  margin-left: -22px; /* shifts left to overlap Eiden 71 */
+  z-index: 5;
+}
+.socksCardEiden58 img {
+  object-position: center;
+}
+
+/* Eiden 59: Socks in Bowl (Left Column, Card 2) */
+.socksCardEiden59 {
+  height: 730px;
+  width: 640px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.socksCardEiden59 img {
+  object-position: center;
+}
+
+/* Eiden 60: Guilt Socks (Right Column, Card 2) */
+.socksCardEiden60 {
+  height: 940px;
+  width: 745px;
+  margin-left: -20px;
+  margin-top: 2px;
+}
+.socksCardEiden60 img {
+  object-position: center;
+}
+
+/* Eiden 61: Socks Banner (Full Width bottom card) */
+.socksCardEiden61 {
+  height: 1000px;
+  width: 1463px;
+  margin-top: 60px;
+  margin-left: -25px;
+}
+.socksCardEiden61 img {
   object-position: center;
 }
 

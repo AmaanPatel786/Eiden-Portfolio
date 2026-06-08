@@ -349,6 +349,56 @@ export default function MoodBoardProducts() {
 
           {/* Section title placeholder for the next socks section */}
           <h2 className={styles.socksTitle}>SOCKS</h2>
+
+          {/* Socks Grid */}
+          <div className={styles.socksGrid}>
+            {/* Left Column */}
+            <div className={styles.socksCol}>
+              <div className={`${styles.socksCard} ${styles.socksCardEiden57}`}>
+                <img
+                  src="/Eiden 57.png"
+                  alt="Eiden Tiger Backpack"
+                  className={styles.socksImg}
+                />
+              </div>
+              <div className={`${styles.socksCard} ${styles.socksCardEiden59}`}>
+                <img
+                  src="/Eiden 59.png"
+                  alt="Eiden Socks Bowl"
+                  className={styles.socksImg}
+                />
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className={styles.socksCol}>
+              <div className={`${styles.socksCard} ${styles.socksCardEiden58}`}>
+                <img
+                  src="/Eiden 58.png"
+                  alt="Eiden Yoda Socks"
+                  className={styles.socksImg}
+                />
+              </div>
+              <div className={`${styles.socksCard} ${styles.socksCardEiden60}`}>
+                <img
+                  src="/Eiden 60.png"
+                  alt="Eiden Guilt Socks"
+                  className={styles.socksImg}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Socks Banner */}
+          <div className={styles.socksBannerContainer}>
+            <div className={`${styles.socksCard} ${styles.socksCardEiden61}`}>
+              <img
+                src="/Eiden 61.png"
+                alt="Eiden Socks Banner"
+                className={styles.socksImg}
+              />
+            </div>
+          </div>
         </div>
       </div>
 
