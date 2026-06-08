@@ -299,8 +299,57 @@ export default function MoodBoardProducts() {
           </div>
         </div>
 
-        {/* Section title placeholder for the next bags section */}
-        <h2 className={styles.bagsTitle}>BAGS</h2>
+        {/* Bags Section — full-bleed black panel outside container */}
+        <div className={styles.bagsSection}>
+          <h2 className={styles.bagsTitle}>BAGS</h2>
+          <div className={styles.bagsGrid}>
+            {/* Left Column */}
+            <div className={styles.bagsCol}>
+              <div className={`${styles.bagsCard} ${styles.bagsCardEiden53}`}>
+                <img
+                  src="/Eiden 53.png"
+                  alt="Eiden Thank You Tote"
+                  className={styles.bagsImg}
+                />
+              </div>
+              <div className={`${styles.bagsCard} ${styles.bagsCardEiden55}`}>
+                <img
+                  src="/Eiden 55.png"
+                  alt="Eiden Mini Backpacks"
+                  className={styles.bagsImg}
+                />
+              </div>
+              <div className={`${styles.bagsCard} ${styles.bagsCardEiden57}`}>
+                <img
+                  src="/Eiden 71.png"
+                  alt="Eiden Civilization Tote"
+                  className={styles.bagsImg}
+                />
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className={styles.bagsCol}>
+              <div className={`${styles.bagsCard} ${styles.bagsCardEiden54}`}>
+                <img
+                  src="/Eiden 54.png"
+                  alt="Eiden Freitag Bags"
+                  className={styles.bagsImg}
+                />
+              </div>
+              <div className={`${styles.bagsCard} ${styles.bagsCardEiden56}`}>
+                <img
+                  src="/Eiden 56.png"
+                  alt="Eiden Wade Backpack"
+                  className={styles.bagsImg}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Section title placeholder for the next socks section */}
+          <h2 className={styles.socksTitle}>SOCKS</h2>
+        </div>
       </div>
 
       {/* Other Segments + Video References (back inside container) */}
@@ -318,17 +367,6 @@ export default function MoodBoardProducts() {
             STICKERS , LUNCHABLES<br />
             BANDS , TAPESTRY<br />
             POSTERS
-          </div>
-        </div>
-
-        {/* Video references */}
-        <div className={styles.extraBlock}>
-          <div className={styles.diamondDivider}></div>
-          <h4 className={styles.extraTitle}>Examples of Implementation</h4>
-          <div className={styles.links}>
-            <a href="https://www.youtube.com/shorts/B8dweXTQ0VM?feature=share" target="_blank" rel="noopener noreferrer">Ref Video 01</a>
-            <a href="https://www.youtube.com/shorts/Jb0HfzWterg?feature=share" target="_blank" rel="noopener noreferrer">Ref Video 02</a>
-            <a href="https://www.youtube.com/shorts/91Q5zF9MLpA?feature=share" target="_blank" rel="noopener noreferrer">Ref Video 03</a>
           </div>
         </div>
       </div>
