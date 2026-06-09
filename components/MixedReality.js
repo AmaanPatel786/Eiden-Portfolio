@@ -4,27 +4,40 @@ export default function MixedReality() {
   return (
     <section className="container">
       <div className={`${styles.block} figma-section-block`}>
-        <div className={styles.grid}>
-          <div className={styles.imageColumn}>
-            <div className={styles.mrMock}>
-              <div className={styles.imageWrapper}>
-                <img src="/Eiden 25.png" alt="Box Mockup Vol 05" className={styles.mockImg} />
-              </div>
-            </div>
-          </div>
-          
-          <div className={styles.textColumn}>
-            <h2 className={styles.fruitTitle}>MIXED REALITY</h2>
-            <h3 className={styles.subHead}>wow factor</h3>
-            <p className={styles.description}>
-              Expand the boundaries of merch, by adding the factor of augmented reality. The direct integration with Instagram's spark AR leads to seamless implementation by the customer
-            </p>
-          </div>
+        <div className={styles.contentWrapper}>
+          <h2 className={styles.title}>MIXED REALITY</h2>
+          <h3 className={styles.subHead}>Wow Factor</h3>
+          <p className={styles.description}>
+            Expand the boundaries of merch, by adding the factor of<br />
+            augmented reality.
+          </p>
+          <p className={styles.description}>
+            The direct integration with Instagram's spark AR<br />
+            leads to seamless implementation by the customer
+          </p>
+        </div>
+        <div className={styles.imageWrapper}>
+          <img src="/Eiden 62.png" alt="Mixed Reality VR Headsets" className={styles.mrImg} />
         </div>
       </div>
-      {/* Background/Banner Image at the bottom */}
-      <div className={styles.mrBanner}>
-        <img src="/Eiden 27.png" alt="Michelangelo MR Background" className={styles.bannerImg} />
+
+      {/* Diamond Divider */}
+      <div className={styles.diamondDivider}></div>
+
+      {/* Examples of Implementation */}
+      <div className={styles.examplesContainer}>
+        <h4 className={styles.examplesTitle}>Examples of Implementation</h4>
+        <div className={styles.linksList}>
+          <a href="https://www.youtube.com/shorts/B8dweXTQOVM?feature=share" target="_blank" rel="noopener noreferrer">
+            https://www.youtube.com/shorts/B8dweXTQOVM?feature=share
+          </a>
+          <a href="https://www.youtube.com/shorts/Jb0HfzWterg?feature=share" target="_blank" rel="noopener noreferrer">
+            https://www.youtube.com/shorts/Jb0HfzWterg?feature=share
+          </a>
+          <a href="https://www.youtube.com/shorts/91Q5zF9MLpA?feature=share" target="_blank" rel="noopener noreferrer">
+            https://www.youtube.com/shorts/91Q5zF9MLpA?feature=share
+          </a>
+        </div>
       </div>
     </section>
   );

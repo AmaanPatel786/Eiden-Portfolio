@@ -337,104 +337,6 @@
   margin-top: 0.7rem;
 }
 
-@media (max-width: 992px) {
-  .bottomRow {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .verticalCard {
-    margin-top: 0;
-  }
-  .phoneTitle {
-    text-align: center;
-    margin-top: var(--space-sm);
-    transform: none;
-    padding-right: 0;
-  }
-  .hoodieGrid {
-    grid-template-columns: 1fr;
-  }
-  .hoodieBottomPair {
-    grid-template-columns: 1fr 1fr;
-  }
-  .hoodieTitle {
-    text-align: center;
-    padding-left: 0;
-  }
-  .hoodieTeeGrid {
-    flex-direction: column;
-  }
-  .hoodieTeeTitleCard {
-    align-items: center;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .hoodieTeeTitleText {
-    text-align: center;
-  }
-  .badgeGrid {
-    flex-direction: column;
-  }
-  .badgeTitleCard {
-    align-items: center;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .badgeTitleText {
-    text-align: center;
-  }
-  .skinMatGrid {
-    flex-direction: column;
-  }
-  .cardEiden52 {
-    margin-left: 0 !important;
-    margin-top: 0 !important;
-  }
-  .skinMatTitle {
-    margin-bottom: var(--space-md);
-  }
-  .bagsTitle {
-    text-align: center;
-    margin-top: var(--space-lg);
-    margin-left: auto;
-    padding-left: 0;
-  }
-  .bagsGrid {
-    flex-direction: column;
-  }
-  .socksTitle {
-    text-align: center;
-    margin-top: var(--space-lg);
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .socksGrid {
-    flex-direction: column;
-  }
-  .socksCard {
-    width: 100% !important;
-    height: auto !important;
-    margin-left: 0 !important;
-    margin-top: 0 !important;
-  }
-  .socksCard img {
-    height: auto !important;
-    aspect-ratio: auto !important;
-  }
-  .socksBannerContainer {
-    width: 100%;
-    margin-top: var(--space-md);
-  }
-  .socksCardEiden61 {
-    width: 100% !important;
-    height: auto !important;
-    margin-left: 0 !important;
-    margin-top: 0 !important;
-    margin-bottom: var(--space-lg) !important;
-  }
-}
 
 .extraBlock {
   display: flex;
@@ -1131,6 +1033,167 @@
 .socksCardEiden61 img {
   object-position: center;
 }
+
+/* ─────────────────────────────────────────────────────────────
+   Mobile Responsive Media Queries (Defined at bottom for cascade)
+   ───────────────────────────────────────────────────────────── */
+@media (max-width: 992px) {
+  .bottomRow {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .verticalCard {
+    margin-top: 0;
+  }
+  .swirlCard {
+    height: auto !important;
+  }
+  .swirlCard img {
+    height: auto !important;
+    aspect-ratio: auto !important;
+  }
+  .phoneTitle {
+    text-align: center;
+    margin-top: var(--space-sm);
+    transform: none;
+    padding-right: 0;
+  }
+  .hoodieGrid {
+    flex-direction: column !important;
+  }
+  .hoodieMainCard {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 0 !important;
+    flex: none !important;
+  }
+  .hoodieMainCard img {
+    height: auto !important;
+  }
+  .hoodieRightCol {
+    width: 100% !important;
+    flex: none !important;
+    gap: var(--space-md) !important;
+  }
+  .hoodieTopCard {
+    width: 100% !important;
+    height: auto !important;
+    flex: none !important;
+  }
+  .hoodieTopCard img {
+    height: auto !important;
+  }
+  .hoodieBottomPair {
+    grid-template-columns: 1fr 1fr;
+    flex: none !important;
+  }
+  .hoodiePairCard {
+    height: auto !important;
+  }
+  .hoodiePairCard img {
+    height: auto !important;
+  }
+  .hoodieTitle {
+    text-align: center;
+    padding-left: 0;
+  }
+  .hoodieTeeGrid {
+    flex-direction: column;
+  }
+  .hoodieTeeTitleCard {
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .hoodieTeeTitleText {
+    text-align: center;
+  }
+  .badgeGrid {
+    flex-direction: column;
+  }
+  .badgeTitleCard {
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .badgeTitleText {
+    text-align: center;
+  }
+  .skinMatGrid {
+    flex-direction: column;
+  }
+  .cardEiden52 {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  .skinMatTitle {
+    margin-bottom: var(--space-md);
+  }
+  .bagsTitle {
+    text-align: center;
+    margin-top: var(--space-lg);
+    margin-left: auto;
+    padding-left: 0;
+  }
+  .bagsGrid {
+    flex-direction: column;
+  }
+  .socksTitle {
+    text-align: center;
+    margin-top: var(--space-lg);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .socksGrid {
+    flex-direction: column;
+  }
+  .socksCard {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  .socksCard img {
+    height: auto !important;
+    aspect-ratio: auto !important;
+  }
+  .socksBannerContainer {
+    width: 100%;
+    margin-top: var(--space-md);
+  }
+  .socksCardEiden61 {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: var(--space-lg) !important;
+  }
+
+  /* Shared card overrides on mobile to reset fixed sizes/offsets */
+  .hoodieTeeCard,
+  .badgeCard,
+  .skinMatCard,
+  .bagsCard {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+  .hoodieTeeCard img,
+  .badgeCard img,
+  .skinMatCard img,
+  .bagsCard img {
+    height: auto !important;
+    aspect-ratio: auto !important;
+  }
+}
+
 
 
 
