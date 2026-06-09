@@ -30,18 +30,6 @@ export default function Home() {
         <TeamSection />
         <ContactFooter />
       </main>
-
-      {/* Retro bottom bar */}
-      <footer style={{
-        backgroundColor: 'var(--bg-color)',
-        borderTop: '2px solid var(--card-border)',
-        padding: '2rem 0',
-        textAlign: 'center'
-      }}>
-        <p style={{ fontFamily: 'var(--font-gotham)', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-          © 2026 EIDEN CREATIVE LAB. ALL RIGHTS RESERVED.
-        </p>
-      </footer>
     </>
   );
 }

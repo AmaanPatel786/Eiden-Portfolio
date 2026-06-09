@@ -85,34 +85,35 @@
 .examplesTitle {
   font-family: var(--font-gotham);
   font-style: normal;
-  font-weight: 300;
+  font-weight: 300 !important;
   font-size: clamp(1.2rem, 2.25vw, 43px);
   line-height: 1.087;
   color: #FFFFFF;
-  margin: 0 0 1.2rem 0;
+  margin: 0 0 2.2rem 0; /* Increased spacing below title */
 }
 
 .linksList {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 2.2rem; /* Increased spacing between lines */
   align-items: center;
 }
 
 .linksList a {
   font-family: var(--font-gotham);
   font-style: normal;
-  font-weight: 300;
+  font-weight: 300 !important;
   font-size: clamp(1rem, 2.25vw, 43px);
   line-height: 1.087;
   color: #FFFFFF;
-  text-decoration: underline;
+  text-decoration: none; /* Removed underline */
   transition: color var(--transition-fast);
   word-break: break-all;
 }
 
 .linksList a:hover {
   color: var(--figma-purple);
+  text-decoration: none;
 }
 
 /* Responsive Overrides */

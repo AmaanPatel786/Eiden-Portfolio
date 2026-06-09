@@ -1,57 +1,75 @@
 .contactSection {
   position: relative;
   background-color: var(--bg-color); /* #010101 */
-  min-height: 85vh;
-  padding: 10rem 0;
+  min-height: 60vh; /* Increased page height to make it feel significantly taller and more spacious */
+  padding: 22rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  max-width: 1220px; /* Constrains the section's width when zoomed out */
+  margin: 0 auto;    /* Centers the section horizontally */
+  width: 100%;       /* Ensures full-width behavior on screen sizes below 1920px */
 }
 
-/* Corner Arc Containers */
-.arcContainer {
+/* Corner Arc Base */
+.arcBase {
   position: absolute;
-  width: 400px;
-  height: 400px;
   pointer-events: none;
   z-index: 1;
 }
 
-.arcSvg {
-  width: 100%;
-  height: 100%;
-}
+/* 
+  MANUAL CONFIGURATION FOR EACH CORNER STROKE (DESKTOP)
+  Tweak sizing, positioning offsets, and rotation angles here.
+*/
 
+/* 1. Top Left Blue Stroke */
 .topArcLeft {
-  top: 0;
-  left: 0;
+  top: -400px;       /* Negative offset pushes stroke to the screen edge */
+  left: -80px;      /* Adjust to place it exactly at the outer boundary */
+  width: 630px;      /* Width of the stroke container */
+  height: 930px;     /* Height based on the image's aspect ratio (~0.75) */
+  transform: rotate(0deg);
+  opacity: 1;
 }
 
+/* 2. Top Right Blue Stroke */
 .topArcRight {
-  top: 0;
-  right: 0;
+  top: -600px;       /* Negative offset pushes stroke to the screen edge */
+  right: -80px;     /* Adjust to place it exactly at the outer boundary */
+  width: 550px;      /* Width of the stroke container */
+  height: 1250px;    /* Height based on the image's aspect ratio (~0.52) */
+  transform: rotate(0deg);
+  opacity: 1;
 }
 
+/* 3. Bottom Left Pink Stroke */
 .bottomArcLeft {
-  bottom: -50px;
-  left: -50px;
-  width: min(500px, 45vw);
-  height: min(400px, 35vw);
+  bottom: -550px;    /* Negative offset pushes stroke to the screen edge */
+  left: -20px;      /* Adjust to place it exactly at the outer boundary */
+  width: 240px;      /* Width of the stroke container */
+  height: 1530px;    /* Height based on the image's aspect ratio (~0.36) */
+  transform: rotate(0deg);
+  opacity: 1;
 }
 
+/* 4. Bottom Right Pink Stroke */
 .bottomArcRight {
-  bottom: -50px;
-  right: -50px;
-  width: min(500px, 45vw);
-  height: min(400px, 35vw);
+  bottom: -550px;    /* Negative offset pushes stroke to the screen edge */
+  right: -20px;     /* Adjust to place it exactly at the outer boundary */
+  width: 240px;      /* Width of the stroke container */
+  height: 1450px;    /* Height based on the image's aspect ratio (~0.35) */
+  transform: rotate(0deg);
+  opacity: 1;
 }
 
 .arcImg {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  opacity: 0.9;
+  opacity: 1; /* Fully opaque colorful PNG strokes */
+  display: block;
 }
 
 /* Content Layout */
@@ -80,7 +98,7 @@
   height: 16px;
   background-color: var(--pure-white);
   transform: rotate(-45deg);
-  margin: var(--space-sm) 0;
+  margin: var(--space-md) 0;
 }
 
 .buttonRow {
@@ -95,7 +113,7 @@
 /* Custom Shape Button - Wrapper */
 .btnWrapper {
   position: relative;
-  padding-top: 35px; /* Creates vertical space for the top circle */
+  padding-top: 75px; /* Creates vertical space for the top tab */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,60 +129,130 @@
 .btnTab {
   position: absolute;
   top: 0px;
-  width: 110px;
-  height: 70px;
-  background-color: #F5F1F1;
-  border-radius: 80px 80px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 120px; /* Maintaining WhiteSquare.png aspect ratio: 140 / 1.17 = ~120px */
+  background-image: url('/WhiteSquare.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   z-index: 1;
-  padding-bottom: 25px; /* Shunts the icon slightly up */
 }
 
 /* Bottom pill container */
 .btnPill {
-  background-color: #F5F1F1;
-  border-radius: 89px; /* Pill layout */
-  padding: 1.2rem 3rem;
-  min-width: 320px;
+  width: 450px;
+  height: 116px; /* Maintaining WhiteBar.png aspect ratio: 500 / 4.29 = ~116px */
+  background-image: url('/WhiteBar.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 2;
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
 }
 
 .btnPill span {
-  font-family: var(--font-gotham);
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: #151515; /* Dark gray/black label text */
-  letter-spacing: -0.02em;
+  font-family: 'Helixa', var(--font-helixa), var(--font-gotham);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 108.7%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: lowercase;
+  color: #151515;
 }
 
-/* Brand Icon styling (blue outlines) */
+/* Brand Icon styling (PNG images) */
 .brandIcon {
-  width: 38px;
-  height: 38px;
-  color: #0033ff; /* Deep solid blue */
-  stroke-width: 2.2;
+  position: absolute;
+  top: 30px; /* Positioned centered vertically in the tab area, overlapping over the top of the pill */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  z-index: 3; /* Positioned above the pill (z-index: 2) and tab (z-index: 1) */
+  pointer-events: none; /* Allows clicks to pass through to the wrapper link */
 }
 
 @media (max-width: 768px) {
   .contactSection {
-    padding: 6rem 0;
+    min-height: 130vh; /* Maintain a larger viewport height on mobile as well */
+    padding: 12rem 0;
   }
-  .arcContainer {
-    width: 250px;
-    height: 250px;
-  }
+  
   .buttonRow {
     gap: var(--space-lg);
   }
+  
+  .btnWrapper {
+    padding-top: 50px;
+  }
+  
+  .btnTab {
+    width: 90px;
+    height: 77px; /* Maintaining WhiteSquare.png aspect ratio: 90 / 1.17 = ~77px */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .brandIcon {
+    width: 38px;
+    height: 38px;
+    top: 19px; /* Centered in mobile tab height */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .btnPill {
-    min-width: 260px;
-    padding: 1rem 2rem;
+    width: 280px;
+    height: 65px; /* Maintaining WhiteBar.png aspect ratio: 280 / 4.29 = ~65px */
+    padding: 0;
+  }
+
+  .btnPill span {
+    font-family: 'Helixa', var(--font-helixa), var(--font-gotham);
+    font-size: 26px; /* Scaled down for mobile viewports */
+    font-weight: 400;
+    line-height: 108.7%;
+    letter-spacing: -0.03em;
+  }
+
+  /* 
+    MANUAL CONFIGURATION FOR EACH CORNER STROKE (MOBILE OVERRIDES)
+    Tweak sizing and positioning specifically for mobile viewports.
+  */
+  .topArcLeft {
+    top: -80px;
+    left: -100px;
+    width: 350px;
+    height: 465px;
+  }
+
+  .topArcRight {
+    top: -100px;
+    right: -80px;
+    width: 320px;
+    height: 615px;
+  }
+
+  .bottomArcLeft {
+    bottom: -150px;
+    left: -60px;
+    width: 250px;
+    height: 700px;
+  }
+
+  .bottomArcRight {
+    bottom: -130px;
+    right: -60px;
+    width: 220px;
+    height: 640px;
   }
 }
