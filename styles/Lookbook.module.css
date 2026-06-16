@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-lg);
+  position: relative;
+  z-index: 6; /* Render Lookbook above FruitTwoTees (z-index 5) so the lookbook banner overlaps on top of it */
 }
 
 .sectionTitle {

@@ -8,10 +8,14 @@
   position: relative;
   z-index: 5; /* Sit on top of GalleryShowcase last image */
   /* Negative top margin pulls the card up to overlap the last image of GalleryShowcase */
-  margin-top: -8.5rem !important;
+  margin-top: -20rem !important;
   margin-bottom: 0 !important; /* Zero margin-bottom to touch the Lookbook section directly */
   /* Top padding for text, side/bottom is 0 so the image can touch the borders edge-to-edge */
   padding: 4.5rem 0 0 0 !important;
+  width: 92%;
+  max-width: 1712px;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .textContainer {
@@ -27,8 +31,8 @@
 .fruitTitle {
   font-family: var(--font-bebas);
   font-weight: 400; /* Use Bebas Neue's native weight without browser-synthesized bold distortion */
-  letter-spacing: 0.02em;
-  font-size: clamp(2.5rem, 5.2vw, 96px); /* Heavy Bebas Neue Title matching screen scale */
+  letter-spacing: -0.01em; /* Tight letter spacing like Figma */
+  font-size: clamp(3rem, 6.2vw, 120px); /* Match first fruit title size */
   line-height: 0.95;
   color: var(--pure-black);
   text-transform: uppercase;
@@ -37,20 +41,23 @@
 
 .subHead {
   font-family: var(--font-gotham);
-  font-weight: 700; /* Crisp native Montserrat Bold */
-  font-size: clamp(1.2rem, 2.2vw, 36px);
+  font-weight: 700; /* Extra bold Montserrat Black (900) */
+  font-size: clamp(2rem, 2.4vw, 50px); /* Match first fruit subhead size */
   color: var(--pure-black);
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.8rem 0;
+  letter-spacing: -0.03em; /* Tight letter spacing like Figma */
 }
 
 .description {
   font-family: var(--font-gotham);
   font-weight: 300; /* Gotham Light equivalent */
-  font-size: clamp(1.1rem, 1.8vw, 32px); /* Proportional Gotham Light size matching expected design scale */
-  line-height: 1.25; /* Tighter streetwear line-height */
+  font-size: clamp(1.4rem, 2.6vw, 34px); /* Match first fruit description size */
+  line-height: 1.15; /* Tighter streetwear line-height */
   color: var(--pure-black);
   max-width: 33em; /* Constrains description to wrap exactly at 'always' across all viewport scales */
   margin: 0;
+  margin-bottom: -5rem;
+  margin-top: 0.6rem; /* Pull description up closer to subhead */
 }
 
 .imageContainer {
@@ -82,6 +89,7 @@
     margin-top: -6rem !important;
     padding-top: 3.5rem !important;
     border-radius: var(--br-figma-sm) !important;
+    width: 100% !important;
   }
   
   .textContainer {
