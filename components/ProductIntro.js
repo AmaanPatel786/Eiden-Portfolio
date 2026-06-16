@@ -18,7 +18,8 @@ export default function ProductIntro() {
         <div className={styles.whiteCard}>
           <h2 className={styles.title}>OUR PRODUCTS ARE HERE TO SPEAK!</h2>
           <p className={styles.description}>
-            We have an array of custom products and an array of original designs all on our website - www.eiden.in/
+            We have an array of custom products and an array of <br />
+            original designs all on our website - www.eiden.in/
           </p>
         </div>
 
