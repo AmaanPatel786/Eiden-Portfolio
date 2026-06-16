@@ -6,7 +6,7 @@ export default function ContactFooter() {
       {/* Top Left Blue Stroke */}
       <div className={`${styles.arcBase} ${styles.topArcLeft}`}>
         <img 
-          src="/TeamBlueUpperLeftStroke.png" 
+          src="/TeamBlueUpperLeftStroke.webp" 
           alt="Blue Stroke Upper Left" 
           className={styles.arcImg} 
         />
@@ -15,7 +15,7 @@ export default function ContactFooter() {
       {/* Top Right Blue Stroke */}
       <div className={`${styles.arcBase} ${styles.topArcRight}`}>
         <img 
-          src="/TeamBlueUpperRightStroke.png" 
+          src="/TeamBlueUpperRightStroke.webp" 
           alt="Blue Stroke Upper Right" 
           className={styles.arcImg} 
         />
@@ -24,7 +24,7 @@ export default function ContactFooter() {
       {/* Bottom Left Pink Stroke */}
       <div className={`${styles.arcBase} ${styles.bottomArcLeft}`}>
         <img 
-          src="/TeamPinkLowerLeftStroke.png" 
+          src="/TeamPinkLowerLeftStroke.webp" 
           alt="Pink Stroke Lower Left" 
           className={styles.arcImg} 
         />
@@ -33,7 +33,7 @@ export default function ContactFooter() {
       {/* Bottom Right Pink Stroke */}
       <div className={`${styles.arcBase} ${styles.bottomArcRight}`}>
         <img 
-          src="/TeamPinkLowerRightStroke.png" 
+          src="/TeamPinkLowerRightStroke.webp" 
           alt="Pink Stroke Lower Right" 
           className={styles.arcImg} 
         />
@@ -54,7 +54,7 @@ export default function ContactFooter() {
               <span>+91 974 150 0851</span>
             </div>
             <img 
-              src="/Whatsapp.png" 
+              src="/Whatsapp.webp" 
               alt="WhatsApp" 
               className={styles.brandIcon} 
             />
@@ -67,7 +67,7 @@ export default function ContactFooter() {
               <span>@eiden.in</span>
             </div>
             <img 
-              src="/Instagram.png" 
+              src="/Instagram.webp" 
               alt="Instagram" 
               className={styles.brandIcon} 
             />

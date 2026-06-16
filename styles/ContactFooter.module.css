@@ -132,8 +132,8 @@
   left: 50%;
   transform: translateX(-50%);
   width: 140px;
-  height: 120px; /* Maintaining WhiteSquare.png aspect ratio: 140 / 1.17 = ~120px */
-  background-image: url('/WhiteSquare.png');
+  height: 120px; /* Maintaining WhiteSquare.webp aspect ratio: 140 / 1.17 = ~120px */
+  background-image: url('/WhiteSquare.webp');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -143,8 +143,8 @@
 /* Bottom pill container */
 .btnPill {
   width: 450px;
-  height: 116px; /* Maintaining WhiteBar.png aspect ratio: 500 / 4.29 = ~116px */
-  background-image: url('/WhiteBar.png');
+  height: 116px; /* Maintaining WhiteBar.webp aspect ratio: 500 / 4.29 = ~116px */
+  background-image: url('/WhiteBar.webp');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -197,7 +197,7 @@
   
   .btnTab {
     width: 90px;
-    height: 77px; /* Maintaining WhiteSquare.png aspect ratio: 90 / 1.17 = ~77px */
+    height: 77px; /* Maintaining WhiteSquare.webp aspect ratio: 90 / 1.17 = ~77px */
     left: 50%;
     transform: translateX(-50%);
   }
@@ -212,7 +212,7 @@
 
   .btnPill {
     width: 280px;
-    height: 65px; /* Maintaining WhiteBar.png aspect ratio: 280 / 4.29 = ~65px */
+    height: 65px; /* Maintaining WhiteBar.webp aspect ratio: 280 / 4.29 = ~65px */
     padding: 0;
   }
 

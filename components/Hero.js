@@ -6,7 +6,7 @@ export default function Hero() {
       <div className={`container ${styles.container}`}>
         {/* Banner Graphic representing yoni mudra above text */}
         <div className={styles.bannerImgContainer}>
-          <img src="/Eiden 1.png" alt="Eiden Illustration Banner" className={styles.bannerImg} />
+          <img src="/Eiden 1.webp" alt="Eiden Illustration Banner" className={styles.bannerImg} />
         </div>
 
         <h1 className={styles.title}>

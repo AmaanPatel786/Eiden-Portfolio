@@ -50,27 +50,27 @@ export default function OurProcess() {
       <div className="container">
         {/* Transitional Banners */}
         <div className={styles.bannerContainer}>
-          <img src="/Eiden 22.png" alt="Eiden Creative Process" className={styles.processBannerImg} />
+          <img src="/Eiden 22.webp" alt="Eiden Creative Process" className={styles.processBannerImg} />
         </div>
       </div>
 
       {/* stickersRow (full-bleed, outside container to span 100% viewport width) */}
       <div className={styles.stickersRow}>
         <div className={styles.stickerCard}>
-          <img src="/Eiden 23.png" alt="Creative Sticker Left" className={styles.stickerCardImg} />
+          <img src="/Eiden 23.webp" alt="Creative Sticker Left" className={styles.stickerCardImg} />
         </div>
         <div className={styles.stickerCard}>
-          <img src="/Eiden 24.png" alt="Creative Sticker Right" className={styles.stickerCardImg} />
+          <img src="/Eiden 24.webp" alt="Creative Sticker Right" className={styles.stickerCardImg} />
         </div>
       </div>
 
       {/* Full-width wrapper for the process content and background strokes */}
       <div className={styles.contentContainer}>
         {/* Background Decorative Strokes */}
-        <img src="/LLPStroke.png" alt="" className={`${styles.stroke} ${styles.ulp}`} />
-        <img src="/LRPStroke.png" alt="" className={`${styles.stroke} ${styles.urp}`} />
-        <img src="/ULPStroke.png" alt="" className={`${styles.stroke} ${styles.llp}`} />
-        <img src="/URPStroke.png" alt="" className={`${styles.stroke} ${styles.lrp}`} />
+        <img src="/LLPStroke.webp" alt="" className={`${styles.stroke} ${styles.ulp}`} />
+        <img src="/LRPStroke.webp" alt="" className={`${styles.stroke} ${styles.urp}`} />
+        <img src="/ULPStroke.webp" alt="" className={`${styles.stroke} ${styles.llp}`} />
+        <img src="/URPStroke.webp" alt="" className={`${styles.stroke} ${styles.lrp}`} />
 
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <h2 className={styles.mainTitle}>Our Process!</h2>
@@ -89,7 +89,7 @@ export default function OurProcess() {
         </div>
       </div>
       <div className={styles.bottomBanner}>
-        <img src="/Eiden 25.png" alt="Box Mockup" className={styles.bottomBannerImg} />
+        <img src="/Eiden 25.webp" alt="Box Mockup" className={styles.bottomBannerImg} />
       </div>
     </section>
   );

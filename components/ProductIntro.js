@@ -6,12 +6,12 @@ export default function ProductIntro() {
       <div className={styles.container}>
         {/* Background Neon Green Stroke */}
         <div className={styles.strokeBg}>
-          <img src="/Eiden Green Stroke.png" alt="Neon Green Stroke Background" className={styles.strokeImg} />
+          <img src="/Eiden Green Stroke.webp" alt="Neon Green Stroke Background" className={styles.strokeImg} />
         </div>
 
         {/* Floating Mockup Card overlapping the white card */}
         <div className={styles.mockupContainer}>
-          <img src="/Eiden 2.png" alt="Eiden Products Showcase" className={styles.mockupImg} />
+          <img src="/Eiden 2.webp" alt="Eiden Products Showcase" className={styles.mockupImg} />
         </div>
 
         {/* White Card Container */}

@@ -5,7 +5,7 @@ export default function FruitThreeStickers() {
     <section className="container">
       <div className={styles.block}>
         <img 
-          src="/Eiden 21.png" 
+          src="/Eiden 21.webp" 
           alt="The Third Fruit - Sticker Packs" 
           className={styles.fullSectionImg} 
         />

@@ -6,13 +6,13 @@ export default function TeamSection() {
       name: 'Anirudh Yanambaka', 
       title: 'Co Founder, Eiden', 
       edu: 'ISDI, Parsons', 
-      img: '/Eiden 63.png' 
+      img: '/Eiden 63.webp' 
     },
     { 
       name: 'Abraham Mathew', 
       title: 'Co Founder, Eiden', 
       edu: 'ISDI, Parsons', 
-      img: '/Eiden 64.png' 
+      img: '/Eiden 64.webp' 
     }
   ];
 
@@ -21,13 +21,13 @@ export default function TeamSection() {
       name: 'Brij Parekh', 
       title: 'Co Founder, Eiden', 
       edu: 'MICA Grad', 
-      img: '/Eiden 65.png' 
+      img: '/Eiden 65.webp' 
     },
     { 
       name: 'Divij Shah', 
       title: 'Co Founder, Eiden', 
       edu: 'Engineer', 
-      img: '/Eiden 66.png' 
+      img: '/Eiden 66.webp' 
     }
   ];
 
