@@ -13,7 +13,7 @@ export default function FruitTwoTees() {
         </div>
         
         <div className={styles.imageContainer}>
-          <img src="/Eiden 7.webp" alt="Eiden Graphic Tees - Models" className={styles.teeImg} />
+          <img src="/eiden_graphic_tees_models.webp" alt="Eiden Graphic Tees - Models" className={styles.teeImg} />
         </div>
       </div>
     </section>

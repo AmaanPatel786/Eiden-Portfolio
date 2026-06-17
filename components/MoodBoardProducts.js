@@ -29,7 +29,7 @@ export default function MoodBoardProducts() {
           {/* Top Card */}
           <div className={styles.topCard}>
             <img 
-              src="/Eiden 27.webp" 
+              src="/eiden_phone_cases_collection.webp" 
               alt="Eiden Phone Cases Collection" 
               className={styles.cardImg} 
             />
@@ -40,7 +40,7 @@ export default function MoodBoardProducts() {
             {/* Left Vertical Card */}
             <div className={styles.verticalCard}>
               <img 
-                src="/Eiden 28.webp" 
+                src="/eiden_custom_phone_case.webp" 
                 alt="Eiden Custom Phone Case" 
                 className={styles.verticalImg} 
               />
@@ -50,7 +50,7 @@ export default function MoodBoardProducts() {
             <div className={styles.rightColumn}>
               <div className={styles.swirlCard}>
                 <img 
-                  src="/Eiden 29.webp" 
+                  src="/eiden_liquid_swirl_cases.webp" 
                   alt="Eiden Liquid Swirl Cases" 
                   className={styles.swirlImg} 
                 />
@@ -68,7 +68,7 @@ export default function MoodBoardProducts() {
           {/* Left Large Card */}
           <div className={styles.hoodieMainCard}>
             <img
-              src="/Eiden 30.webp"
+              src="/eiden_hoodie_tour_edition.webp"
               alt="Eiden Hoodie Tour Edition"
               className={styles.hoodieMainImg}
             />
@@ -79,7 +79,7 @@ export default function MoodBoardProducts() {
             {/* Top Right Card */}
             <div className={styles.hoodieTopCard}>
               <img
-                src="/Eiden 31.webp"
+                src="/eiden_hoodies_duo.webp"
                 alt="Eiden Hoodies Duo"
                 className={styles.hoodieCardImg}
               />
@@ -89,14 +89,14 @@ export default function MoodBoardProducts() {
             <div className={styles.hoodieBottomPair}>
               <div className={styles.hoodiePairCard}>
                 <img
-                  src="/Eiden 32.webp"
+                  src="/eiden_conquer_hoodie.webp"
                   alt="Eiden Conquer Hoodie"
                   className={styles.hoodieCardImg}
                 />
               </div>
               <div className={styles.hoodiePairCard}>
                 <img
-                  src="/Eiden 33.webp"
+                  src="/eiden_roaring_power_hoodie.webp"
                   alt="Eiden Roaring Power Hoodie"
                   className={styles.hoodieCardImg}
                 />
@@ -110,14 +110,14 @@ export default function MoodBoardProducts() {
           <div className={styles.hoodieTeeCol}>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden34}`}>
               <img
-                src="/Eiden 34.webp"
+                src="/eiden_welcome_to_cruel_world_hoodie.webp"
                 alt="Eiden Welcome To Cruel World Hoodie"
                 className={styles.hoodieTeeImg}
               />
             </div>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden36}`}>
               <img
-                src="/Eiden 36.webp"
+                src="/eiden_winning_hoodie.webp"
                 alt="Eiden Winning Hoodie"
                 className={styles.hoodieTeeImg}
               />
@@ -133,14 +133,14 @@ export default function MoodBoardProducts() {
 
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden38}`}>
               <img
-                src="/Eiden 38.webp"
+                src="/eiden_limited_edition_skull_tee.webp"
                 alt="Eiden Limited Edition Skull Tee"
                 className={styles.hoodieTeeImg}
               />
             </div>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden40}`}>
               <img
-                src="/Eiden 40.webp"
+                src="/eiden_hope_butterfly_tee.webp"
                 alt="Eiden Hope Butterfly Tee"
                 className={styles.hoodieTeeImg}
               />
@@ -151,28 +151,28 @@ export default function MoodBoardProducts() {
           <div className={styles.hoodieTeeCol}>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden35}`}>
               <img
-                src="/Eiden 35.webp"
+                src="/eiden_streetstyle_graffiti_hoodie.webp"
                 alt="Eiden Streetstyle Graffiti Hoodie"
                 className={styles.hoodieTeeImg}
               />
             </div>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden37}`}>
               <img
-                src="/Eiden 37.webp"
+                src="/eiden_dark_side_pink_hoodie.webp"
                 alt="Eiden Dark Side Pink Hoodie"
                 className={styles.hoodieTeeImg}
               />
             </div>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden39}`}>
               <img
-                src="/Eiden 39.webp"
+                src="/eiden_dark_side_street_hoodie.webp"
                 alt="Eiden Dark Side Street Hoodie"
                 className={styles.hoodieTeeImg}
               />
             </div>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden41}`}>
               <img
-                src="/Eiden 41.webp"
+                src="/eiden_songs_tee.webp"
                 alt="Eiden Songs Tee"
                 className={styles.hoodieTeeImg}
               />
@@ -188,21 +188,21 @@ export default function MoodBoardProducts() {
           <div className={styles.badgeCol}>
             <div className={`${styles.badgeCard} ${styles.cardEiden42}`}>
               <img
-                src="/Eiden 42.webp"
+                src="/eiden_badges_black.webp"
                 alt="Eiden Badges Black"
                 className={styles.badgeImg}
               />
             </div>
             <div className={`${styles.badgeCard} ${styles.cardEiden43}`}>
               <img
-                src="/Eiden 43.webp"
+                src="/eiden_badges_red_purple.webp"
                 alt="Eiden Badges Red Purple"
                 className={styles.badgeImg}
               />
             </div>
             <div className={`${styles.badgeCard} ${styles.cardEiden44}`}>
               <img
-                src="/Eiden 44.webp"
+                src="/eiden_badges_green_orange.webp"
                 alt="Eiden Badges Green Orange"
                 className={styles.badgeImg}
               />
@@ -221,7 +221,7 @@ export default function MoodBoardProducts() {
             </div>
             <div className={`${styles.badgeCard} ${styles.cardEiden45}`}>
               <img
-                src="/Eiden 45.webp"
+                src="/eiden_popsockets.webp"
                 alt="Eiden Popsockets"
                 className={styles.badgeImg}
               />
@@ -238,28 +238,28 @@ export default function MoodBoardProducts() {
           <div className={styles.skinMatCol}>
             <div className={`${styles.skinMatCard} ${styles.cardEiden46}`}>
               <img
-                src="/Eiden 46.webp"
+                src="/eiden_doctor_strange_laptop_skin.webp"
                 alt="Eiden Doctor Strange Laptop Skin"
                 className={styles.skinMatImg}
               />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden48}`}>
               <img
-                src="/Eiden 48.webp"
+                src="/eiden_pink_anime_desk_mat.webp"
                 alt="Eiden Pink Anime Desk Mat"
                 className={styles.skinMatImg}
               />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden50}`}>
               <img
-                src="/Eiden 50.webp"
+                src="/eiden_rick_and_morty_desk_mat.webp"
                 alt="Eiden Rick and Morty Desk Mat"
                 className={styles.skinMatImg}
               />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden51}`}>
               <img
-                src="/Eiden 51.webp"
+                src="/eiden_oni_monster_desk_mat.webp"
                 alt="Eiden Oni Monster Desk Mat"
                 className={styles.skinMatImg}
               />
@@ -270,28 +270,28 @@ export default function MoodBoardProducts() {
           <div className={styles.skinMatCol}>
             <div className={`${styles.skinMatCard} ${styles.cardEiden47}`}>
               <img
-                src="/Eiden 47.webp"
+                src="/eiden_purple_green_keyboard_mat.webp"
                 alt="Eiden Purple Green Keyboard Mat"
                 className={styles.skinMatImg}
               />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden49}`}>
               <img
-                src="/Eiden 49.webp"
+                src="/eiden_dragon_desk_mat.webp"
                 alt="Eiden Dragon Desk Mat"
                 className={styles.skinMatImg}
               />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden53}`}>
               <img
-                src="/Eiden 70.webp"
+                src="/eiden_yellow_black_laptop_skin.webp"
                 alt="Eiden Yellow Black Laptop Skin"
                 className={styles.skinMatImg}
               />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden52}`}>
               <img
-                src="/Eiden 52.webp"
+                src="/eiden_green_cartoon_laptop_skin.webp"
                 alt="Eiden Green Cartoon Laptop Skin"
                 className={styles.skinMatImg}
               />
@@ -307,21 +307,21 @@ export default function MoodBoardProducts() {
             <div className={styles.bagsCol}>
               <div className={`${styles.bagsCard} ${styles.bagsCardEiden53}`}>
                 <img
-                  src="/Eiden 53.webp"
+                  src="/eiden_thank_you_tote.webp"
                   alt="Eiden Thank You Tote"
                   className={styles.bagsImg}
                 />
               </div>
               <div className={`${styles.bagsCard} ${styles.bagsCardEiden55}`}>
                 <img
-                  src="/Eiden 55.webp"
+                  src="/eiden_mini_backpacks.webp"
                   alt="Eiden Mini Backpacks"
                   className={styles.bagsImg}
                 />
               </div>
               <div className={`${styles.bagsCard} ${styles.bagsCardEiden57}`}>
                 <img
-                  src="/Eiden 71.webp"
+                  src="/eiden_civilization_tote.webp"
                   alt="Eiden Civilization Tote"
                   className={styles.bagsImg}
                 />
@@ -332,14 +332,14 @@ export default function MoodBoardProducts() {
             <div className={styles.bagsCol}>
               <div className={`${styles.bagsCard} ${styles.bagsCardEiden54}`}>
                 <img
-                  src="/Eiden 54.webp"
+                  src="/eiden_freitag_bags.webp"
                   alt="Eiden Freitag Bags"
                   className={styles.bagsImg}
                 />
               </div>
               <div className={`${styles.bagsCard} ${styles.bagsCardEiden56}`}>
                 <img
-                  src="/Eiden 56.webp"
+                  src="/eiden_wade_backpack.webp"
                   alt="Eiden Wade Backpack"
                   className={styles.bagsImg}
                 />
@@ -356,14 +356,14 @@ export default function MoodBoardProducts() {
             <div className={styles.socksCol}>
               <div className={`${styles.socksCard} ${styles.socksCardEiden57}`}>
                 <img
-                  src="/Eiden 57.webp"
+                  src="/eiden_tiger_backpack.webp"
                   alt="Eiden Tiger Backpack"
                   className={styles.socksImg}
                 />
               </div>
               <div className={`${styles.socksCard} ${styles.socksCardEiden59}`}>
                 <img
-                  src="/Eiden 59.webp"
+                  src="/eiden_socks_bowl.webp"
                   alt="Eiden Socks Bowl"
                   className={styles.socksImg}
                 />
@@ -374,14 +374,14 @@ export default function MoodBoardProducts() {
             <div className={styles.socksCol}>
               <div className={`${styles.socksCard} ${styles.socksCardEiden58}`}>
                 <img
-                  src="/Eiden 58.webp"
+                  src="/eiden_yoda_socks.webp"
                   alt="Eiden Yoda Socks"
                   className={styles.socksImg}
                 />
               </div>
               <div className={`${styles.socksCard} ${styles.socksCardEiden60}`}>
                 <img
-                  src="/Eiden 60.webp"
+                  src="/eiden_guilt_socks.webp"
                   alt="Eiden Guilt Socks"
                   className={styles.socksImg}
                 />
@@ -393,7 +393,7 @@ export default function MoodBoardProducts() {
           <div className={styles.socksBannerContainer}>
             <div className={`${styles.socksCard} ${styles.socksCardEiden61}`}>
               <img
-                src="/Eiden 61.webp"
+                src="/eiden_socks_banner.webp"
                 alt="Eiden Socks Banner"
                 className={styles.socksImg}
               />

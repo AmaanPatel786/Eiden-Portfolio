@@ -5,7 +5,7 @@ export default function ScopeOfWork() {
     <section className={`${styles.section} container`}>
       <div className={styles.block}>
         <img 
-          src="/Eiden 26.webp" 
+          src="/scope_of_work_eiden_x_you.webp" 
           alt="Scope of Work - Eiden x You" 
           className={styles.fullSectionImg} 
         />

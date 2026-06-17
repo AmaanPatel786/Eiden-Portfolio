@@ -11,7 +11,7 @@ export default function ProductIntro() {
 
         {/* Floating Mockup Card overlapping the white card */}
         <div className={styles.mockupContainer}>
-          <img src="/Eiden 2.webp" alt="Eiden Products Showcase" className={styles.mockupImg} />
+          <img src="/eiden_products_showcase.webp" alt="Eiden Products Showcase" className={styles.mockupImg} />
         </div>
 
         {/* White Card Container */}

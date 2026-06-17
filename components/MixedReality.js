@@ -17,7 +17,7 @@ export default function MixedReality() {
           </p>
         </div>
         <div className={styles.imageWrapper}>
-          <img src="/Eiden 62.webp" alt="Mixed Reality VR Headsets" className={styles.mrImg} />
+          <img src="/mixed_reality_vr_headsets.webp" alt="Mixed Reality VR Headsets" className={styles.mrImg} />
         </div>
       </div>
 

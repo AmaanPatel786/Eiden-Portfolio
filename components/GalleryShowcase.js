@@ -2,9 +2,9 @@ import styles from '../styles/GalleryShowcase.module.css';
 
 export default function GalleryShowcase() {
   const images = [
-    { path: '/Eiden 4.webp', name: 'mudra' },
-    { path: '/Eiden 5.webp', name: 'baronposter' },
-    { path: '/Eiden 6.webp', name: 'Mockup _9' }
+    { path: '/mudra.webp', name: 'mudra' },
+    { path: '/baronposter.webp', name: 'baronposter' },
+    { path: '/mockup_9.webp', name: 'Mockup _9' }
   ];
 
   return (
