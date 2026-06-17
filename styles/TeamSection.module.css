@@ -1,28 +1,28 @@
 .section {
   /* --- CONFIGURATION FOR STROKES (Tweak these variables to adjust position and scaling) --- */
   --left-stroke-width: 56vw;
-  --left-stroke-top: -35vw;
+  --left-stroke-top: -32vw;
   --left-stroke-left: 0;
   --left-stroke-scale-x: 1;      /* 1 = normal, -1 = horizontal flip */
-  --left-stroke-scale-y: -1;     /* 1 = normal, -1 = vertical flip */
+  --left-stroke-scale-y: 1;     /* 1 = normal, -1 = vertical flip */
   --left-stroke-rotate: 0deg;    /* e.g. 5deg, -5deg */
   --left-stroke-translate-x: -100px; /* Shift horizontally to offset/crop (e.g. -5vw or 100px) */
   --left-stroke-translate-y: 100px; /* Shift vertically */
-  --left-stroke-mask-angle: 0deg;
-  --left-stroke-mask-start: 55%;
-  --left-stroke-mask-end: 65%;
+  --left-stroke-mask-angle: 180deg;
+  --left-stroke-mask-start: 30%;
+  --left-stroke-mask-end: 55%;
 
   --right-stroke-width: 56vw;
-  --right-stroke-top: -18vw;
+  --right-stroke-top: -45vw;
   --right-stroke-right: 0;
   --right-stroke-scale-x: 1;    /* 1 = normal, -1 = horizontal flip */
-  --right-stroke-scale-y: -1;    /* 1 = normal, -1 = vertical flip */
+  --right-stroke-scale-y: 1;    /* 1 = normal, -1 = vertical flip */
   --right-stroke-rotate: 0deg;   /* e.g. 5deg, -5deg */
   --right-stroke-translate-x: 100px; /* Shift horizontally to offset/crop (e.g. 5vw or -100px) */
   --right-stroke-translate-y: 40px; /* Shift vertically */
-  --right-stroke-mask-angle: 0deg;
-  --right-stroke-mask-start: 45%;
-  --right-stroke-mask-end: 58%;
+  --right-stroke-mask-angle: 180deg;
+  --right-stroke-mask-start: 50%;
+  --right-stroke-mask-end: 60%;
 
   padding: clamp(20rem, 36vw, 40rem) 0 6rem 0;
   background-color: #000000;
