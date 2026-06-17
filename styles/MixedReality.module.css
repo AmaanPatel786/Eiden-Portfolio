@@ -7,6 +7,10 @@
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Automatically rounds the bottom corners of the VR image */
+  width: 94%;
+  max-width: 1712px;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .contentWrapper {
@@ -24,7 +28,7 @@
   line-height: 0.84;
   color: var(--pure-black);
   text-transform: uppercase;
-  margin: 0 0 1.8rem 0;
+  margin: 0 0 0.6rem 0;
   letter-spacing: 0.01em;
 }
 
@@ -39,7 +43,7 @@
 .description {
   font-family: var(--font-gotham);
   font-weight: 300;
-  font-size: clamp(1rem, 2.1vw, 2.3rem);
+  font-size: clamp(1.4rem, 2.6vw, 2.8rem);
   line-height: 1.25;
   color: var(--pure-black);
   margin: 0 0 1.5rem 0;
@@ -120,6 +124,7 @@
 @media (max-width: 992px) {
   .block {
     border-radius: var(--br-figma-sm) !important; /* Force smaller 35px border-radius on tablets/mobiles */
+    width: 100% !important;
   }
   .contentWrapper {
     padding: 3.5rem 1.5rem 2.5rem 1.5rem;

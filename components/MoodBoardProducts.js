@@ -4,8 +4,8 @@ export default function MoodBoardProducts() {
   return (
     <section className={styles.section} id="moodboard">
       {/* Background Decorative Blue Strokes */}
-      <img src="/MoodBoardLeftBlue.webp" alt="" className={`${styles.stroke} ${styles.leftStroke}`} />
-      <img src="/MoodBoardRightBlue.webp" alt="" className={`${styles.stroke} ${styles.rightStroke}`} />
+      <img  src="/MoodBoardLeftBlue.webp" alt="" className={`${styles.stroke} ${styles.leftStroke}`} loading="lazy" />
+      <img  src="/MoodBoardRightBlue.webp" alt="" className={`${styles.stroke} ${styles.rightStroke}`} loading="lazy" />
       <div className={styles.topFadeOverlay}></div>
 
       {/* Mood Board Header + Phone Cases (inside container) */}
@@ -20,40 +20,36 @@ export default function MoodBoardProducts() {
         {/* Phone Cases Grid */}
         <div className={styles.phoneGrid}>
           {/* Background Pink Stroke */}
-          <img 
+          <img  
             src="/PhoneCaseStroke.webp" 
             alt="" 
-            className={styles.pinkStroke} 
-          />
+            className={styles.pinkStroke} loading="lazy" />
 
           {/* Top Card */}
           <div className={styles.topCard}>
-            <img 
+            <img  
               src="/eiden_phone_cases_collection.webp" 
               alt="Eiden Phone Cases Collection" 
-              className={styles.cardImg} 
-            />
+              className={styles.cardImg} loading="lazy" />
           </div>
 
           {/* Bottom Row */}
           <div className={styles.bottomRow}>
             {/* Left Vertical Card */}
             <div className={styles.verticalCard}>
-              <img 
+              <img  
                 src="/eiden_custom_phone_case.webp" 
                 alt="Eiden Custom Phone Case" 
-                className={styles.verticalImg} 
-              />
+                className={styles.verticalImg} loading="lazy" />
             </div>
 
             {/* Right Column */}
             <div className={styles.rightColumn}>
               <div className={styles.swirlCard}>
-                <img 
+                <img  
                   src="/eiden_liquid_swirl_cases.webp" 
                   alt="Eiden Liquid Swirl Cases" 
-                  className={styles.swirlImg} 
-                />
+                  className={styles.swirlImg} loading="lazy" />
               </div>
               <h2 className={styles.phoneTitle}>Phone Cases</h2>
             </div>
@@ -67,39 +63,35 @@ export default function MoodBoardProducts() {
         <div className={styles.hoodieGrid}>
           {/* Left Large Card */}
           <div className={styles.hoodieMainCard}>
-            <img
+            <img 
               src="/eiden_hoodie_tour_edition.webp"
               alt="Eiden Hoodie Tour Edition"
-              className={styles.hoodieMainImg}
-            />
+              className={styles.hoodieMainImg} loading="lazy" />
           </div>
 
           {/* Right Column */}
           <div className={styles.hoodieRightCol}>
             {/* Top Right Card */}
             <div className={styles.hoodieTopCard}>
-              <img
+              <img 
                 src="/eiden_hoodies_duo.webp"
                 alt="Eiden Hoodies Duo"
-                className={styles.hoodieCardImg}
-              />
+                className={styles.hoodieCardImg} loading="lazy" />
             </div>
 
             {/* Bottom Right Two Cards */}
             <div className={styles.hoodieBottomPair}>
               <div className={styles.hoodiePairCard}>
-                <img
+                <img 
                   src="/eiden_conquer_hoodie.webp"
                   alt="Eiden Conquer Hoodie"
-                  className={styles.hoodieCardImg}
-                />
+                  className={styles.hoodieCardImg} loading="lazy" />
               </div>
               <div className={styles.hoodiePairCard}>
-                <img
+                <img 
                   src="/eiden_roaring_power_hoodie.webp"
                   alt="Eiden Roaring Power Hoodie"
-                  className={styles.hoodieCardImg}
-                />
+                  className={styles.hoodieCardImg} loading="lazy" />
               </div>
             </div>
           </div>
@@ -109,18 +101,16 @@ export default function MoodBoardProducts() {
           {/* Left Column */}
           <div className={styles.hoodieTeeCol}>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden34}`}>
-              <img
+              <img 
                 src="/eiden_welcome_to_cruel_world_hoodie.webp"
                 alt="Eiden Welcome To Cruel World Hoodie"
-                className={styles.hoodieTeeImg}
-              />
+                className={styles.hoodieTeeImg} loading="lazy" />
             </div>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden36}`}>
-              <img
+              <img 
                 src="/eiden_winning_hoodie.webp"
                 alt="Eiden Winning Hoodie"
-                className={styles.hoodieTeeImg}
-              />
+                className={styles.hoodieTeeImg} loading="lazy" />
             </div>
             
             {/* Text Title Card */}
@@ -132,50 +122,44 @@ export default function MoodBoardProducts() {
             </div>
 
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden38}`}>
-              <img
+              <img 
                 src="/eiden_limited_edition_skull_tee.webp"
                 alt="Eiden Limited Edition Skull Tee"
-                className={styles.hoodieTeeImg}
-              />
+                className={styles.hoodieTeeImg} loading="lazy" />
             </div>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden40}`}>
-              <img
+              <img 
                 src="/eiden_hope_butterfly_tee.webp"
                 alt="Eiden Hope Butterfly Tee"
-                className={styles.hoodieTeeImg}
-              />
+                className={styles.hoodieTeeImg} loading="lazy" />
             </div>
           </div>
 
           {/* Right Column */}
           <div className={styles.hoodieTeeCol}>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden35}`}>
-              <img
+              <img 
                 src="/eiden_streetstyle_graffiti_hoodie.webp"
                 alt="Eiden Streetstyle Graffiti Hoodie"
-                className={styles.hoodieTeeImg}
-              />
+                className={styles.hoodieTeeImg} loading="lazy" />
             </div>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden37}`}>
-              <img
+              <img 
                 src="/eiden_dark_side_pink_hoodie.webp"
                 alt="Eiden Dark Side Pink Hoodie"
-                className={styles.hoodieTeeImg}
-              />
+                className={styles.hoodieTeeImg} loading="lazy" />
             </div>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden39}`}>
-              <img
+              <img 
                 src="/eiden_dark_side_street_hoodie.webp"
                 alt="Eiden Dark Side Street Hoodie"
-                className={styles.hoodieTeeImg}
-              />
+                className={styles.hoodieTeeImg} loading="lazy" />
             </div>
             <div className={`${styles.hoodieTeeCard} ${styles.cardEiden41}`}>
-              <img
+              <img 
                 src="/eiden_songs_tee.webp"
                 alt="Eiden Songs Tee"
-                className={styles.hoodieTeeImg}
-              />
+                className={styles.hoodieTeeImg} loading="lazy" />
             </div>
           </div>
         </div>
@@ -187,25 +171,22 @@ export default function MoodBoardProducts() {
           {/* Left Column */}
           <div className={styles.badgeCol}>
             <div className={`${styles.badgeCard} ${styles.cardEiden42}`}>
-              <img
+              <img 
                 src="/eiden_badges_black.webp"
                 alt="Eiden Badges Black"
-                className={styles.badgeImg}
-              />
+                className={styles.badgeImg} loading="lazy" />
             </div>
             <div className={`${styles.badgeCard} ${styles.cardEiden43}`}>
-              <img
+              <img 
                 src="/eiden_badges_red_purple.webp"
                 alt="Eiden Badges Red Purple"
-                className={styles.badgeImg}
-              />
+                className={styles.badgeImg} loading="lazy" />
             </div>
             <div className={`${styles.badgeCard} ${styles.cardEiden44}`}>
-              <img
+              <img 
                 src="/eiden_badges_green_orange.webp"
                 alt="Eiden Badges Green Orange"
-                className={styles.badgeImg}
-              />
+                className={styles.badgeImg} loading="lazy" />
             </div>
           </div>
 
@@ -220,11 +201,10 @@ export default function MoodBoardProducts() {
               </h2>
             </div>
             <div className={`${styles.badgeCard} ${styles.cardEiden45}`}>
-              <img
+              <img 
                 src="/eiden_popsockets.webp"
                 alt="Eiden Popsockets"
-                className={styles.badgeImg}
-              />
+                className={styles.badgeImg} loading="lazy" />
             </div>
           </div>
         </div>
@@ -237,64 +217,56 @@ export default function MoodBoardProducts() {
           {/* Left Column */}
           <div className={styles.skinMatCol}>
             <div className={`${styles.skinMatCard} ${styles.cardEiden46}`}>
-              <img
+              <img 
                 src="/eiden_doctor_strange_laptop_skin.webp"
                 alt="Eiden Doctor Strange Laptop Skin"
-                className={styles.skinMatImg}
-              />
+                className={styles.skinMatImg} loading="lazy" />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden48}`}>
-              <img
+              <img 
                 src="/eiden_pink_anime_desk_mat.webp"
                 alt="Eiden Pink Anime Desk Mat"
-                className={styles.skinMatImg}
-              />
+                className={styles.skinMatImg} loading="lazy" />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden50}`}>
-              <img
+              <img 
                 src="/eiden_rick_and_morty_desk_mat.webp"
                 alt="Eiden Rick and Morty Desk Mat"
-                className={styles.skinMatImg}
-              />
+                className={styles.skinMatImg} loading="lazy" />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden51}`}>
-              <img
+              <img 
                 src="/eiden_oni_monster_desk_mat.webp"
                 alt="Eiden Oni Monster Desk Mat"
-                className={styles.skinMatImg}
-              />
+                className={styles.skinMatImg} loading="lazy" />
             </div>
           </div>
 
           {/* Right Column */}
           <div className={styles.skinMatCol}>
             <div className={`${styles.skinMatCard} ${styles.cardEiden47}`}>
-              <img
+              <img 
                 src="/eiden_purple_green_keyboard_mat.webp"
                 alt="Eiden Purple Green Keyboard Mat"
-                className={styles.skinMatImg}
-              />
+                className={styles.skinMatImg} loading="lazy" />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden49}`}>
-              <img
+              <img 
                 src="/eiden_dragon_desk_mat.webp"
                 alt="Eiden Dragon Desk Mat"
-                className={styles.skinMatImg}
-              />
+                className={styles.skinMatImg} loading="lazy" />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden53}`}>
-              <img
+              <img 
                 src="/eiden_yellow_black_laptop_skin.webp"
                 alt="Eiden Yellow Black Laptop Skin"
-                className={styles.skinMatImg}
-              />
+                className={styles.skinMatImg} loading="lazy" />
             </div>
             <div className={`${styles.skinMatCard} ${styles.cardEiden52}`}>
-              <img
+              <img 
                 src="/eiden_green_cartoon_laptop_skin.webp"
                 alt="Eiden Green Cartoon Laptop Skin"
-                className={styles.skinMatImg}
-              />
+                className={styles.skinMatImg} loading="lazy" />
             </div>
           </div>
         </div>
@@ -306,43 +278,38 @@ export default function MoodBoardProducts() {
             {/* Left Column */}
             <div className={styles.bagsCol}>
               <div className={`${styles.bagsCard} ${styles.bagsCardEiden53}`}>
-                <img
+                <img 
                   src="/eiden_thank_you_tote.webp"
                   alt="Eiden Thank You Tote"
-                  className={styles.bagsImg}
-                />
+                  className={styles.bagsImg} loading="lazy" />
               </div>
               <div className={`${styles.bagsCard} ${styles.bagsCardEiden55}`}>
-                <img
+                <img 
                   src="/eiden_mini_backpacks.webp"
                   alt="Eiden Mini Backpacks"
-                  className={styles.bagsImg}
-                />
+                  className={styles.bagsImg} loading="lazy" />
               </div>
               <div className={`${styles.bagsCard} ${styles.bagsCardEiden57}`}>
-                <img
+                <img 
                   src="/eiden_civilization_tote.webp"
                   alt="Eiden Civilization Tote"
-                  className={styles.bagsImg}
-                />
+                  className={styles.bagsImg} loading="lazy" />
               </div>
             </div>
 
             {/* Right Column */}
             <div className={styles.bagsCol}>
               <div className={`${styles.bagsCard} ${styles.bagsCardEiden54}`}>
-                <img
+                <img 
                   src="/eiden_freitag_bags.webp"
                   alt="Eiden Freitag Bags"
-                  className={styles.bagsImg}
-                />
+                  className={styles.bagsImg} loading="lazy" />
               </div>
               <div className={`${styles.bagsCard} ${styles.bagsCardEiden56}`}>
-                <img
+                <img 
                   src="/eiden_wade_backpack.webp"
                   alt="Eiden Wade Backpack"
-                  className={styles.bagsImg}
-                />
+                  className={styles.bagsImg} loading="lazy" />
               </div>
             </div>
           </div>
@@ -355,36 +322,32 @@ export default function MoodBoardProducts() {
             {/* Left Column */}
             <div className={styles.socksCol}>
               <div className={`${styles.socksCard} ${styles.socksCardEiden57}`}>
-                <img
+                <img 
                   src="/eiden_tiger_backpack.webp"
                   alt="Eiden Tiger Backpack"
-                  className={styles.socksImg}
-                />
+                  className={styles.socksImg} loading="lazy" />
               </div>
               <div className={`${styles.socksCard} ${styles.socksCardEiden59}`}>
-                <img
+                <img 
                   src="/eiden_socks_bowl.webp"
                   alt="Eiden Socks Bowl"
-                  className={styles.socksImg}
-                />
+                  className={styles.socksImg} loading="lazy" />
               </div>
             </div>
 
             {/* Right Column */}
             <div className={styles.socksCol}>
               <div className={`${styles.socksCard} ${styles.socksCardEiden58}`}>
-                <img
+                <img 
                   src="/eiden_yoda_socks.webp"
                   alt="Eiden Yoda Socks"
-                  className={styles.socksImg}
-                />
+                  className={styles.socksImg} loading="lazy" />
               </div>
               <div className={`${styles.socksCard} ${styles.socksCardEiden60}`}>
-                <img
+                <img 
                   src="/eiden_guilt_socks.webp"
                   alt="Eiden Guilt Socks"
-                  className={styles.socksImg}
-                />
+                  className={styles.socksImg} loading="lazy" />
               </div>
             </div>
           </div>
@@ -392,11 +355,10 @@ export default function MoodBoardProducts() {
           {/* Socks Banner */}
           <div className={styles.socksBannerContainer}>
             <div className={`${styles.socksCard} ${styles.socksCardEiden61}`}>
-              <img
+              <img 
                 src="/eiden_socks_banner.webp"
                 alt="Eiden Socks Banner"
-                className={styles.socksImg}
-              />
+                className={styles.socksImg} loading="lazy" />
             </div>
           </div>
         </div>

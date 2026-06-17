@@ -33,6 +33,10 @@ export default function TeamSection() {
 
   return (
     <section className={styles.section} id="team">
+      {/* Decorative strokes curving down to the Meet the Team title */}
+      <img  src="/MeetTeamLeftStroke.webp" alt="" className={`${styles.stroke} ${styles.leftStroke}`} loading="lazy" />
+      <img  src="/MeetTeamRightStroke.webp" alt="" className={`${styles.stroke} ${styles.rightStroke}`} loading="lazy" />
+
       <div className="container">
         <h2 className={styles.mainTitle}>MEET THE TEAM</h2>
         
@@ -40,7 +44,8 @@ export default function TeamSection() {
         <div className={styles.diamondDivider}></div>
         
         <p className={styles.subtitle}>
-          Coming from different fields to unite and pull off the best designs that can cater to all types of target audiences!
+          Coming from different fields to unite and pull off the best designs that <br />
+          can cater to all types of target audiences!
         </p>
 
         {/* The Creatives Category */}
@@ -50,7 +55,7 @@ export default function TeamSection() {
             {creatives.map((member, idx) => (
               <div key={idx} className={styles.card}>
                 <div className={styles.avatar}>
-                  <img src={member.img} alt={member.name} className={styles.avatarImg} />
+                  <img  src={member.img} alt={member.name} className={styles.avatarImg} loading="lazy" />
                 </div>
                 <div className={styles.info}>
                   <h4 className={styles.name}>{member.name}</h4>
@@ -72,7 +77,7 @@ export default function TeamSection() {
             {execs.map((member, idx) => (
               <div key={idx} className={styles.card}>
                 <div className={styles.avatar}>
-                  <img src={member.img} alt={member.name} className={styles.avatarImg} />
+                  <img  src={member.img} alt={member.name} className={styles.avatarImg} loading="lazy" />
                 </div>
                 <div className={styles.info}>
                   <h4 className={styles.name}>{member.name}</h4>

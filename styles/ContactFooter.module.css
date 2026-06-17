@@ -1,15 +1,25 @@
 .contactSection {
   position: relative;
   background-color: var(--bg-color); /* #010101 */
-  min-height: 60vh; /* Increased page height to make it feel significantly taller and more spacious */
-  padding: 22rem 0;
+  min-height: 150vh; /* Increased page height to make it feel significantly taller and more spacious */
+  padding: 35rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  max-width: 1220px; /* Constrains the section's width when zoomed out */
-  margin: 0 auto;    /* Centers the section horizontally */
-  width: 100%;       /* Ensures full-width behavior on screen sizes below 1920px */
+  width: 100%;
+}
+
+/* Top Black Fade Transition Overlay */
+.topFade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background: linear-gradient(to bottom, var(--bg-color) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 2;
 }
 
 /* Corner Arc Base */
@@ -26,40 +36,40 @@
 
 /* 1. Top Left Blue Stroke */
 .topArcLeft {
-  top: -400px;       /* Negative offset pushes stroke to the screen edge */
-  left: -80px;      /* Adjust to place it exactly at the outer boundary */
-  width: 630px;      /* Width of the stroke container */
-  height: 930px;     /* Height based on the image's aspect ratio (~0.75) */
+  top: -550px;       /* Negative offset pushes stroke to the screen edge */
+  left: -120px;      /* Adjust to place it exactly at the outer boundary */
+  width: 800px;      /* Width of the stroke container */
+  height: 1180px;     /* Height based on the image's aspect ratio (~0.75) */
   transform: rotate(0deg);
   opacity: 1;
 }
 
 /* 2. Top Right Blue Stroke */
 .topArcRight {
-  top: -600px;       /* Negative offset pushes stroke to the screen edge */
-  right: -80px;     /* Adjust to place it exactly at the outer boundary */
-  width: 550px;      /* Width of the stroke container */
-  height: 1250px;    /* Height based on the image's aspect ratio (~0.52) */
+  top: -850px;       /* Negative offset pushes stroke to the screen edge */
+  right: -120px;     /* Adjust to place it exactly at the outer boundary */
+  width: 750px;      /* Width of the stroke container */
+  height: 1700px;    /* Height based on the image's aspect ratio (~0.52) */
   transform: rotate(0deg);
   opacity: 1;
 }
 
 /* 3. Bottom Left Pink Stroke */
 .bottomArcLeft {
-  bottom: -550px;    /* Negative offset pushes stroke to the screen edge */
-  left: -20px;      /* Adjust to place it exactly at the outer boundary */
-  width: 240px;      /* Width of the stroke container */
-  height: 1530px;    /* Height based on the image's aspect ratio (~0.36) */
+  bottom: -800px;    /* Negative offset pushes stroke to the screen edge */
+  left: -40px;      /* Adjust to place it exactly at the outer boundary */
+  width: 350px;      /* Width of the stroke container */
+  height: 2200px;    /* Height based on the image's aspect ratio (~0.36) */
   transform: rotate(0deg);
   opacity: 1;
 }
 
 /* 4. Bottom Right Pink Stroke */
 .bottomArcRight {
-  bottom: -550px;    /* Negative offset pushes stroke to the screen edge */
-  right: -20px;     /* Adjust to place it exactly at the outer boundary */
-  width: 240px;      /* Width of the stroke container */
-  height: 1450px;    /* Height based on the image's aspect ratio (~0.35) */
+  bottom: -800px;    /* Negative offset pushes stroke to the screen edge */
+  right: -40px;     /* Adjust to place it exactly at the outer boundary */
+  width: 350px;      /* Width of the stroke container */
+  height: 2100px;    /* Height based on the image's aspect ratio (~0.35) */
   transform: rotate(0deg);
   opacity: 1;
 }
@@ -75,18 +85,18 @@
 /* Content Layout */
 .content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--space-md);
+  gap: 0;
   text-align: center;
 }
 
 .title {
   font-family: var(--font-bebas);
-  font-size: clamp(3rem, 8vw, 6.5rem); /* Bebas Neue styling */
+  font-size: clamp(4.5rem, 10vw, 9.5rem); /* Bebas Neue styling - scaled up */
   color: var(--pure-white);
   line-height: 1;
   text-transform: uppercase;
@@ -94,11 +104,11 @@
 }
 
 .diamond {
-  width: 16px;
-  height: 16px;
+  width: 30px; /* Scaled up */
+  height: 30px;
   background-color: var(--pure-white);
   transform: rotate(-45deg);
-  margin: var(--space-md) 0;
+  margin: 12rem 0; /* Huge vertical spacing matching Figma design */
 }
 
 .buttonRow {
@@ -106,14 +116,14 @@
   gap: var(--space-xl);
   justify-content: center;
   align-items: center;
-  margin-top: var(--space-md);
+  margin-top: 0;
   flex-wrap: wrap;
 }
 
 /* Custom Shape Button - Wrapper */
 .btnWrapper {
   position: relative;
-  padding-top: 75px; /* Creates vertical space for the top tab */
+  padding-top: 100px; /* Increased vertical space for the top tab */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,8 +141,8 @@
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
-  width: 140px;
-  height: 120px; /* Maintaining WhiteSquare.webp aspect ratio: 140 / 1.17 = ~120px */
+  width: 190px; /* Scaled up */
+  height: 162px; /* Maintaining WhiteSquare.webp aspect ratio: 190 / 1.17 = ~162px */
   background-image: url('/WhiteSquare.webp');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -142,8 +152,8 @@
 
 /* Bottom pill container */
 .btnPill {
-  width: 450px;
-  height: 116px; /* Maintaining WhiteBar.webp aspect ratio: 500 / 4.29 = ~116px */
+  width: 600px; /* Scaled up */
+  height: 140px; /* Maintaining WhiteBar.webp aspect ratio: 600 / 4.29 = ~140px */
   background-image: url('/WhiteBar.webp');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -159,7 +169,7 @@
   font-family: 'Helixa', var(--font-helixa), var(--font-gotham);
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 42px; /* Scaled up font */
   line-height: 108.7%;
   text-align: center;
   letter-spacing: -0.03em;
@@ -170,55 +180,73 @@
 /* Brand Icon styling (PNG images) */
 .brandIcon {
   position: absolute;
-  top: 30px; /* Positioned centered vertically in the tab area, overlapping over the top of the pill */
+  top: 22px; /* Adjusted position for larger brand icon */
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 60px;
+  width: 115px; /* Scaled up brand icon */
+  height: 115px;
   object-fit: contain;
   display: block;
   z-index: 3; /* Positioned above the pill (z-index: 2) and tab (z-index: 1) */
   pointer-events: none; /* Allows clicks to pass through to the wrapper link */
 }
 
+/* WhatsApp brand icon specific override to make it slightly smaller */
+.whatsappIcon {
+  width: 95px;
+  height: 95px;
+  top: 32px;
+}
+
 @media (max-width: 768px) {
   .contactSection {
-    min-height: 130vh; /* Maintain a larger viewport height on mobile as well */
-    padding: 12rem 0;
+    min-height: 150vh; /* Maintain a larger viewport height on mobile as well */
+    padding: 24rem 0;
+  }
+
+  .diamond {
+    margin: 8rem 0; /* Spacious diamond margins on mobile */
   }
   
   .buttonRow {
     gap: var(--space-lg);
+    margin-top: 0;
   }
   
   .btnWrapper {
-    padding-top: 50px;
+    padding-top: 60px;
   }
   
   .btnTab {
-    width: 90px;
-    height: 77px; /* Maintaining WhiteSquare.webp aspect ratio: 90 / 1.17 = ~77px */
+    width: 110px;
+    height: 94px; /* Maintaining WhiteSquare.webp aspect ratio: 110 / 1.17 = ~94px */
     left: 50%;
     transform: translateX(-50%);
   }
 
   .brandIcon {
-    width: 38px;
-    height: 38px;
-    top: 19px; /* Centered in mobile tab height */
+    width: 60px;
+    height: 60px;
+    top: 18px; /* Centered in mobile tab height */
     left: 50%;
     transform: translateX(-50%);
   }
 
+  .whatsappIcon {
+    width: 50px;
+    height: 50px;
+    top: 23px;
+  }
+
   .btnPill {
-    width: 280px;
-    height: 65px; /* Maintaining WhiteBar.webp aspect ratio: 280 / 4.29 = ~65px */
+    width: 320px;
+    height: 75px; /* Maintaining WhiteBar.webp aspect ratio: 320 / 4.29 = ~75px */
     padding: 0;
   }
 
   .btnPill span {
     font-family: 'Helixa', var(--font-helixa), var(--font-gotham);
-    font-size: 26px; /* Scaled down for mobile viewports */
+    font-size: 28px; /* Scaled down for mobile viewports */
     font-weight: 400;
     line-height: 108.7%;
     letter-spacing: -0.03em;
@@ -254,5 +282,9 @@
     right: -60px;
     width: 220px;
     height: 640px;
+  }
+
+  .topFade {
+    height: 150px;
   }
 }

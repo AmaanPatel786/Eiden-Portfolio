@@ -22,8 +22,8 @@
   left: 50%;
   bottom: 8.5%; /* Positioned centered in the green space below the paragraph text */
   transform: translateX(-50%) rotate(45deg);
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: var(--pure-black);
   z-index: 6;
   display: block;

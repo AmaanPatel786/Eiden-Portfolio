@@ -8,6 +8,7 @@ export default function ScopeOfWork() {
           src="/scope_of_work_eiden_x_you.webp" 
           alt="Scope of Work - Eiden x You" 
           className={styles.fullSectionImg} 
+          loading="lazy"
         />
         <div className={styles.blackDiamond}></div>
       </div>

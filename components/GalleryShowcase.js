@@ -11,7 +11,7 @@ export default function GalleryShowcase() {
     <section className={styles.sectionWrapper}>
       {images.map((img, idx) => (
         <div key={idx} className={styles.imageContainer}>
-          <img src={img.path} alt={img.name} className={styles.showcaseImg} />
+          <img src={img.path} alt={img.name} className={styles.showcaseImg} loading="lazy" />
         </div>
       ))}
     </section>

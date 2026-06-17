@@ -6,7 +6,7 @@ export default function FruitOneFrames() {
       <div className={`${styles.block} figma-section-block`}>
         <div className={styles.grid}>
           <div className={styles.imageColumn}>
-            <img src="/eiden_graphic_frame_john_wick.webp" alt="Eiden Graphic Frame - John Wick" className={styles.frameImg} />
+            <img src="/eiden_graphic_frame_john_wick.webp" alt="Eiden Graphic Frame - John Wick" className={styles.frameImg} loading="lazy" />
           </div>
           
           <div className={styles.textColumn}>

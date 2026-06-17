@@ -56,8 +56,8 @@
 }
 
 .diamondSeparator {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: var(--pure-white);
   transform: rotate(-45deg);
   margin: 0 auto clamp(1.5rem, 3vw, 3rem) auto;
@@ -350,12 +350,13 @@
 }
 
 .diamondDivider {
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
   background-color: var(--pure-white);
   transform: rotate(-45deg);
-  border: var(--border-thick);
-  margin-bottom: var(--space-xl);
+  border: none;
+  margin-bottom: var(--space-lg);
+  margin-top: var(--space-sm);
 }
 
 .extraTitle {
@@ -565,14 +566,14 @@
 .badgeTitleText {
   font-family: var(--font-bebas);
   font-weight: 400;
-  font-size: clamp(3rem, 7vw, 9rem);
+  font-size: clamp(6rem, 10vw, 12rem);
   color: #FA00FF; /* Vibrant hot pink from screenshot */
   text-align: right;
   line-height: 0.84;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: 0.02em;
-  margin-right: 7rem;
+  margin-right: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -841,7 +842,7 @@
 .socksTitle {
   font-family: var(--font-bebas);
   font-weight: 400;
-  font-size: clamp(4.5rem, 9.5vw, 12.5rem);
+  font-size: clamp(5rem, 10vw, 13rem);
   color: #B7FF1F; /* Lime green color */
   text-align: right;
   line-height: 0.84;
@@ -850,7 +851,7 @@
   margin-bottom: 0;
   width: 96%;
   max-width: 1400px;
-  margin-left: 400px;
+  margin-left: -2rem;
   margin-right: auto;
 }
 

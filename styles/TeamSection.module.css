@@ -1,19 +1,47 @@
 .section {
-  padding: 6rem 0;
+  /* --- CONFIGURATION FOR STROKES (Tweak these variables to adjust position and scaling) --- */
+  --left-stroke-width: 56vw;
+  --left-stroke-top: -35vw;
+  --left-stroke-left: 0;
+  --left-stroke-scale-x: 1;      /* 1 = normal, -1 = horizontal flip */
+  --left-stroke-scale-y: -1;     /* 1 = normal, -1 = vertical flip */
+  --left-stroke-rotate: 0deg;    /* e.g. 5deg, -5deg */
+  --left-stroke-translate-x: -100px; /* Shift horizontally to offset/crop (e.g. -5vw or 100px) */
+  --left-stroke-translate-y: 100px; /* Shift vertically */
+  --left-stroke-mask-angle: 0deg;
+  --left-stroke-mask-start: 55%;
+  --left-stroke-mask-end: 65%;
+
+  --right-stroke-width: 56vw;
+  --right-stroke-top: -18vw;
+  --right-stroke-right: 0;
+  --right-stroke-scale-x: 1;    /* 1 = normal, -1 = horizontal flip */
+  --right-stroke-scale-y: -1;    /* 1 = normal, -1 = vertical flip */
+  --right-stroke-rotate: 0deg;   /* e.g. 5deg, -5deg */
+  --right-stroke-translate-x: 100px; /* Shift horizontally to offset/crop (e.g. 5vw or -100px) */
+  --right-stroke-translate-y: 40px; /* Shift vertically */
+  --right-stroke-mask-angle: 0deg;
+  --right-stroke-mask-start: 45%;
+  --right-stroke-mask-end: 58%;
+
+  padding: clamp(20rem, 36vw, 40rem) 0 6rem 0;
   background-color: #000000;
   color: var(--text-color);
+  position: relative;
 }
 
 .mainTitle {
   font-family: var(--font-bebas);
   font-weight: 400;
-  font-size: clamp(3.5rem, 8vw, 9rem);
+  font-size: clamp(5rem, 11vw, 13.5rem); /* Substantially increased size to match Figma */
   text-align: center;
   color: var(--pure-white);
   line-height: 1;
   text-transform: uppercase;
-  margin: 0 0 1.5rem 0;
-  letter-spacing: 0.02em;
+  margin: 0 0 2.5rem 0; /* Increased margin for figma spacing */
+  letter-spacing: -0.01em; /* Tighter letter-spacing matching figma */
+  position: relative;
+  z-index: 2;
 }
 
 /* Centered White Diamond Divider */
@@ -23,22 +51,26 @@
   background-color: var(--pure-white);
   transform: rotate(-45deg);
   border: 2px solid var(--pure-white);
-  margin: 0 auto 2rem auto;
+  margin: 2.5rem auto 3rem auto; /* Increased vertical margins for figma spacing */
+  position: relative;
+  z-index: 2;
 }
 
 .subtitle {
   font-family: var(--font-gotham);
-  font-weight: 300;
-  font-size: clamp(1rem, 2vw, 1.6rem);
+  font-weight: 300; /* Light weight matching figma description style */
+  font-size: clamp(1.25rem, 2.2vw, 2.8rem); /* Scaled down to match figma mirror layout size */
   text-align: center;
-  color: var(--text-muted);
-  margin: 0 auto 5rem auto;
-  max-width: 900px;
-  line-height: 1.4;
+  color: var(--text-muted); /* Muted gray matching figma screenshot */
+  margin: 0 auto 11rem auto; /* Increased margin-bottom to push category title down */
+  max-width: 1200px;
+  line-height: 1.1;
+  position: relative;
+  z-index: 2;
 }
 
 .categoryBlock {
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 .categoryBlock:last-of-type {
@@ -48,10 +80,10 @@
 .catTitle {
   font-family: var(--font-bebas);
   font-weight: 400;
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  font-size: clamp(3rem, 6vw, 6rem); /* Figma proportions: half the main title size */
   text-align: center;
   color: var(--pure-white);
-  margin: 0 auto 3rem auto;
+  margin: 1rem auto 1rem auto; /* Slightly increased margin-bottom */
   text-transform: uppercase;
   letter-spacing: 0.01em;
 }
@@ -59,8 +91,8 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  max-width: 1000px;
+  gap: 2.5rem; /* Reduced gap to bring wider cards closer together */
+  max-width: 1712px; /* Stretched to align with Mixed Reality and yellow/pink sections */
   margin: 0 auto 2.5rem auto;
   width: 96%;
 }
@@ -75,12 +107,12 @@
 
 .avatar {
   width: 100%;
-  max-width: 480px;
-  height: 380px;
+  max-width: 680px; /* Reduced card size slightly for a cleaner layout */
+  height: 480px;    /* Reduced card height proportionally */
   background-color: #111;
-  border-radius: 35px; /* Large rounded corners matching mockup cards */
+  border-radius: 50px; /* Adjusted border-radius for slightly smaller card size */
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
   display: flex;
   box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.4);
 }
@@ -96,13 +128,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.4rem;
 }
 
 .name {
   font-family: var(--font-gotham);
   font-weight: 700;
-  font-size: clamp(1.1rem, 2.2vw, 1.7rem);
+  font-size: clamp(1.5rem, 2.3vw, 2.8rem); /* Aligned with Figma spec of 48px */
   letter-spacing: -0.02em;
   color: var(--pure-white);
   margin: 0;
@@ -111,33 +143,65 @@
 .titleText {
   font-family: var(--font-gotham);
   font-weight: 300;
-  font-size: clamp(0.95rem, 1.8vw, 1.35rem);
-  color: var(--text-muted);
+  font-size: clamp(1.3rem, 2vw, 2.4rem); /* Aligned with Figma spec of 43px */
+  color: var(--pure-white); /* White color matching Figma spec */
   margin: 0;
 }
 
 .eduText {
   font-family: var(--font-gotham);
   font-weight: 300;
-  font-size: clamp(0.95rem, 1.8vw, 1.35rem);
-  color: var(--text-muted);
+  font-size: clamp(1.3rem, 2vw, 2.4rem); /* Aligned with Figma spec of 43px */
+  color: var(--pure-white); /* White color matching Figma spec */
   margin: 0;
 }
 
 .bioParagraph {
   font-family: var(--font-gotham);
   font-weight: 300;
-  font-size: clamp(0.95rem, 2vw, 1.45rem);
+  font-size: clamp(1.3rem, 2vw, 2.4rem); /* Aligned with Figma spec of 43px */
   line-height: 1.4;
-  color: var(--text-muted);
+  color: var(--pure-white); /* White color matching Figma spec */
   text-align: center;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 94%;
 }
 
+.stroke {
+  position: absolute;
+  height: auto;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.leftStroke {
+  left: var(--left-stroke-left);
+  top: var(--left-stroke-top);
+  width: var(--left-stroke-width);
+  transform: translate(var(--left-stroke-translate-x), var(--left-stroke-translate-y)) scale(var(--left-stroke-scale-x), var(--left-stroke-scale-y)) rotate(var(--left-stroke-rotate));
+  -webkit-mask-image: linear-gradient(var(--left-stroke-mask-angle), rgba(0, 0, 0, 1) var(--left-stroke-mask-start), rgba(0, 0, 0, 0) var(--left-stroke-mask-end));
+  mask-image: linear-gradient(var(--left-stroke-mask-angle), rgba(0, 0, 0, 1) var(--left-stroke-mask-start), rgba(0, 0, 0, 0) var(--left-stroke-mask-end));
+}
+
+.rightStroke {
+  right: var(--right-stroke-right);
+  top: var(--right-stroke-top);
+  width: var(--right-stroke-width);
+  transform: translate(var(--right-stroke-translate-x), var(--right-stroke-translate-y)) scale(var(--right-stroke-scale-x), var(--right-stroke-scale-y)) rotate(var(--right-stroke-rotate));
+  -webkit-mask-image: linear-gradient(var(--right-stroke-mask-angle), rgba(0, 0, 0, 1) var(--right-stroke-mask-start), rgba(0, 0, 0, 0) var(--right-stroke-mask-end));
+  mask-image: linear-gradient(var(--right-stroke-mask-angle), rgba(0, 0, 0, 1) var(--right-stroke-mask-start), rgba(0, 0, 0, 0) var(--right-stroke-mask-end));
+}
+
 /* Tablet & Mobile Responsive Overrides */
 @media (max-width: 992px) {
+  .leftStroke,
+  .rightStroke {
+    display: none !important;
+  }
+  .section {
+    padding: 4rem 0 !important;
+  }
   .grid {
     grid-template-columns: 1fr;
     gap: 4rem;

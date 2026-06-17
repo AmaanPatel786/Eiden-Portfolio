@@ -1,16 +1,18 @@
 import Hero from '../components/Hero';
 import ProductIntro from '../components/ProductIntro';
-import FruitOneFrames from '../components/FruitOneFrames';
-import GalleryShowcase from '../components/GalleryShowcase';
-import FruitTwoTees from '../components/FruitTwoTees';
-import Lookbook from '../components/Lookbook';
-import FruitThreeStickers from '../components/FruitThreeStickers';
-import OurProcess from '../components/OurProcess';
-import ScopeOfWork from '../components/ScopeOfWork';
-import MoodBoardProducts from '../components/MoodBoardProducts';
-import MixedReality from '../components/MixedReality';
-import TeamSection from '../components/TeamSection';
-import ContactFooter from '../components/ContactFooter';
+import dynamic from 'next/dynamic';
+
+const FruitOneFrames = dynamic(() => import('../components/FruitOneFrames'));
+const GalleryShowcase = dynamic(() => import('../components/GalleryShowcase'));
+const FruitTwoTees = dynamic(() => import('../components/FruitTwoTees'));
+const Lookbook = dynamic(() => import('../components/Lookbook'));
+const FruitThreeStickers = dynamic(() => import('../components/FruitThreeStickers'));
+const OurProcess = dynamic(() => import('../components/OurProcess'));
+const ScopeOfWork = dynamic(() => import('../components/ScopeOfWork'));
+const MoodBoardProducts = dynamic(() => import('../components/MoodBoardProducts'));
+const MixedReality = dynamic(() => import('../components/MixedReality'));
+const TeamSection = dynamic(() => import('../components/TeamSection'));
+const ContactFooter = dynamic(() => import('../components/ContactFooter'));
 
 export default function Home() {
   return (

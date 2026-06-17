@@ -8,6 +8,7 @@ export default function FruitThreeStickers() {
           src="/the_third_fruit_sticker_packs.webp" 
           alt="The Third Fruit - Sticker Packs" 
           className={styles.fullSectionImg} 
+          loading="lazy"
         />
       </div>
     </section>
