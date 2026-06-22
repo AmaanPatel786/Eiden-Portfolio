@@ -102,6 +102,33 @@
   }
 }
 
+/* Mobile (Tablet Portrait & Phones) */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .fruitTitle {
+    font-size: clamp(2rem, 8.5vw, 3rem);
+    line-height: 1.05;
+  }
+
+  .subHead {
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+  }
+
+  .description {
+    font-size: clamp(0.95rem, 4.5vw, 1.15rem);
+    line-height: 1.4;
+    margin-bottom: 0;
+    max-width: 90%;
+  }
+
+  .imageContainer {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 480px) {
   .block {
     margin-top: -4rem !important;
@@ -110,10 +137,10 @@
   }
 
   .textContainer {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .imageContainer {
-    margin-top: -6vw; /* Reduced negative margin on mobile */
+    margin-top: 0;
   }
 }

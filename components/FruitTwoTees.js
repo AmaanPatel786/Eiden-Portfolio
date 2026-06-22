@@ -2,7 +2,7 @@ import styles from '../styles/FruitTwoTees.module.css';
 
 export default function FruitTwoTees() {
   return (
-    <section className="container">
+    <section className={`container ${styles.container}`}>
       <div className={`${styles.block} figma-section-block`}>
         <div className={styles.textContainer}>
           <h2 className={styles.fruitTitle}>THE SECOND FRUIT</h2>

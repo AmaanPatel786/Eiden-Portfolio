@@ -236,7 +236,48 @@
   }
 }
 
-/* Mobile */
+/* Mobile (Tablet Portrait & Phones) */
+@media (max-width: 768px) {
+  .sectionWrapper br {
+    display: none;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .mockupContainer {
+    margin-bottom: -20vw;
+  }
+
+  .whiteCard {
+    padding-top: clamp(110px, 28vw, 180px);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.5rem;
+    border-radius: 35px;
+  }
+
+  .title {
+    font-size: clamp(1.6rem, 7.5vw, 2.8rem);
+    line-height: 1.05;
+    margin-bottom: 1rem;
+    white-space: normal;
+  }
+
+  .description {
+    font-size: clamp(0.95rem, 4vw, 1.15rem);
+    line-height: 1.4;
+  }
+
+  .paradiseText {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+    line-height: 1.05;
+    margin-top: 2rem;
+  }
+}
+
+/* Small mobile devices */
 @media (max-width: 480px) {
   .strokeBg {
     width: 180vw;
@@ -244,20 +285,13 @@
   }
 
   .mockupContainer {
-    margin-bottom: -18vw;
+    margin-bottom: -20vw;
   }
 
   .whiteCard {
-    padding-top: 22vw;
-
-    border-radius: 35px;
-
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .title {
-    white-space: normal;
-    font-size: clamp(1.5rem, 7vw, 2.5rem);
+    padding-top: 28vw;
+    border-radius: 30px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }

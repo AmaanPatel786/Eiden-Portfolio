@@ -2,7 +2,7 @@ import styles from '../styles/FruitOneFrames.module.css';
 
 export default function FruitOneFrames() {
   return (
-    <section className="container">
+    <section className={`container ${styles.container}`}>
       <div className={`${styles.block} figma-section-block`}>
         <div className={styles.grid}>
           <div className={styles.imageColumn}>

@@ -117,9 +117,36 @@
     text-align: left;
     align-items: flex-start;
     margin-left: 0; /* Reset margins on mobile */
+    max-width: 100%;
   }
 }
 
+/* Mobile (Tablet Portrait & Phones) */
+@media (max-width: 768px) {
+  .block br {
+    display: none;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .fruitTitle {
+    font-size: clamp(2rem, 8.5vw, 3rem);
+    line-height: 1.05;
+  }
+
+  .subHead {
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+  }
+
+  .paragraph {
+    font-size: clamp(0.95rem, 4.5vw, 1.15rem);
+    line-height: 1.4;
+  }
+}
+
+/* Small mobile devices */
 @media (max-width: 480px) {
   .imageColumn {
     margin-top: -5rem;

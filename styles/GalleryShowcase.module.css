@@ -68,3 +68,13 @@
   display: none !important;
 }
 
+@media (max-width: 768px) {
+  .sectionWrapper {
+    padding-top: 3rem;
+  }
+  .imageContainer::before,
+  .imageContainer::after {
+    height: clamp(30px, 8vw, 50px);
+  }
+}
+
