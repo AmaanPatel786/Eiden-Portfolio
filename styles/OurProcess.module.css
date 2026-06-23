@@ -230,6 +230,14 @@
 
   .bottomBanner {
     margin-top: -10vw;
+    height: 380px;
+    overflow: hidden;
+  }
+
+  .bottomBannerImg {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .stepDesc br {

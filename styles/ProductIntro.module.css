@@ -209,7 +209,13 @@
 
   .mockupContainer {
     width: 100%;
+    right: 0;
+    left: 0;
     margin-bottom: -22vw;
+  }
+
+  .mockupImg {
+    margin-right: 0;
   }
 
   .whiteCard {
@@ -247,11 +253,21 @@
   }
 
   .mockupContainer {
-    margin-bottom: -20vw;
+    width: calc(100% + 2.5rem);
+    right: 0;
+    left: 0;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    margin-bottom: -45vw;
+  }
+
+  .mockupImg {
+    margin-right: 0;
   }
 
   .whiteCard {
-    padding-top: clamp(110px, 28vw, 180px);
+    width: 100%;
+    padding-top: 52vw;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 2.5rem;
@@ -280,16 +296,21 @@
 /* Small mobile devices */
 @media (max-width: 480px) {
   .strokeBg {
-    width: 180vw;
-    top: 0;
+    width: 240vw;
+    top: 20px;
   }
 
   .mockupContainer {
-    margin-bottom: -20vw;
+    width: calc(100% + 2.5rem);
+    right: 0;
+    left: 0;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    margin-bottom: -48vw;
   }
 
   .whiteCard {
-    padding-top: 28vw;
+    padding-top: 55vw;
     border-radius: 30px;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
