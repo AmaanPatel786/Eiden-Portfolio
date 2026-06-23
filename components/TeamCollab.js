@@ -20,7 +20,7 @@ export default function TeamCollab() {
               I partner with premium streetwear labels, indie bands, skate shops, and design collectivities to drop limited graphic capsules, sticker drops, and skate deck prints.
             </p>
             <p className={styles.subtext}>
-              If your label represents rebel cultures, pixel-art retro nostalgia, or experimental design directions—let's create a custom collab series.
+              If your label represents rebel cultures, pixel-art retro nostalgia, or experimental design directions—let&apos;s create a custom collab series.
             </p>
             <div className={styles.features}>
               <div className={styles.feat}>

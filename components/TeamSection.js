@@ -37,7 +37,7 @@ export default function TeamSection() {
       <img  src="/MeetTeamLeftStroke.webp" alt="" className={`${styles.stroke} ${styles.leftStroke}`} loading="lazy" />
       <img  src="/MeetTeamRightStroke.webp" alt="" className={`${styles.stroke} ${styles.rightStroke}`} loading="lazy" />
 
-      <div className="container">
+      <div className={`container ${styles.container}`}>
         <h2 className={styles.mainTitle}>MEET THE TEAM</h2>
         
         {/* Diamond Divider */}
@@ -88,7 +88,7 @@ export default function TeamSection() {
             ))}
           </div>
           <p className={styles.bioParagraph}>
-            Here to grow business and execute all the designs made by the creative team all while making sure the creative team doesn't get out of hand and make stuff that no one understands!
+            Here to grow business and execute all the designs made by the creative team all while making sure the creative team doesn&apos;t get out of hand and make stuff that no one understands!
           </p>
         </div>
       </div>

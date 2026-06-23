@@ -123,6 +123,10 @@
 
 /* Mobile (Tablet Portrait & Phones) */
 @media (max-width: 768px) {
+  .block {
+    margin-bottom: 1rem !important;
+  }
+
   .block br {
     display: none;
   }

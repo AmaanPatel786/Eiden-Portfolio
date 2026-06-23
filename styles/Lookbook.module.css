@@ -124,11 +124,20 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
   .wrapper {
     margin: -4rem 0 1.5rem 0 !important; /* Adjusted pull-up margin for mobile curves, 1.5rem bottom margin */
   }
   .customCollage {
     gap: 16px;
+  }
+  .fullWidthCard,
+  .halfWidthCard,
+  .thirdWidthCard,
+  .bottomBannerCard {
+    border-radius: 16px !important;
   }
   .twoColumnRow {
     grid-template-columns: 1fr; /* Stack on mobile/tablet */

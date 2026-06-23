@@ -197,26 +197,75 @@
 @media (max-width: 992px) {
   .leftStroke,
   .rightStroke {
-    display: none !important;
+    display: block !important;
+    opacity: 0.6;
+    width: 65vw !important;
+    transform: translate(0, 0) scale(1) !important;
+  }
+  .leftStroke {
+    top: -22vw !important;
+    left: -10vw !important;
+  }
+  .rightStroke {
+    top: -5-vw !important;
+    right: -10vw !important;
   }
   .section {
-    padding: 4rem 0 !important;
+    padding: 3rem 0 !important;
   }
   .grid {
     grid-template-columns: 1fr;
-    gap: 4rem;
-    margin-bottom: 2.5rem;
+    gap: 2rem !important;
+    margin-bottom: 2rem !important;
+    width: 100% !important;
   }
   .avatar {
-    height: 320px; /* Shorter card height on smaller portrait screens */
+    height: 300px !important;
+    border-radius: 16px !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .mainTitle {
+    font-size: clamp(2rem, 8.5vw, 3.2rem) !important;
+    line-height: 1.05 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .diamondDivider {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 1.5rem auto !important;
   }
   .subtitle {
-    margin-bottom: 3.5rem;
+    font-size: clamp(0.95rem, 4.5vw, 1.15rem) !important;
+    line-height: 1.4 !important;
+    margin-bottom: 2.5rem !important;
+    max-width: 95% !important;
+  }
+  .subtitle br {
+    display: none !important;
   }
   .catTitle {
-    margin-bottom: 2rem;
+    font-size: clamp(1.6rem, 7vw, 2.2rem) !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .name {
+    font-size: clamp(1.1rem, 5vw, 1.3rem) !important;
+  }
+  .titleText {
+    font-size: clamp(0.9rem, 4vw, 1.05rem) !important;
+  }
+  .eduText {
+    font-size: clamp(0.8rem, 3.5vw, 0.95rem) !important;
+  }
+  .bioParagraph {
+    font-size: clamp(0.95rem, 4.5vw, 1.15rem) !important;
+    line-height: 1.4 !important;
+    margin-top: 1.5rem !important;
+    max-width: 95% !important;
   }
   .categoryBlock {
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem !important;
+  }
+  .container {
+    padding: 0 1.25rem !important;
   }
 }

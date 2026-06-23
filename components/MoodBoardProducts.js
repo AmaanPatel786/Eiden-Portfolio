@@ -9,7 +9,7 @@ export default function MoodBoardProducts() {
       <div className={styles.topFadeOverlay}></div>
 
       {/* Mood Board Header + Phone Cases (inside container) */}
-      <div className="container" style={{ position: 'relative', zIndex: 3 }}>
+      <div className={`container ${styles.container}`} style={{ position: 'relative', zIndex: 3 }}>
         <h2 className={styles.mainTitle}>Mood Board</h2>
         <div className={styles.diamondSeparator}></div>
         <p className={styles.subtitle}>

@@ -2,7 +2,7 @@ import styles from '../styles/MixedReality.module.css';
 
 export default function MixedReality() {
   return (
-    <section className="container">
+    <section className={`container ${styles.container}`}>
       <div className={`${styles.block} figma-section-block`}>
         <div className={styles.contentWrapper}>
           <h2 className={styles.title}>MIXED REALITY</h2>
@@ -12,7 +12,7 @@ export default function MixedReality() {
             augmented reality.
           </p>
           <p className={styles.description}>
-            The direct integration with Instagram's spark AR<br />
+            The direct integration with Instagram&apos;s spark AR<br />
             leads to seamless implementation by the customer
           </p>
         </div>

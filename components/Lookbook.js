@@ -2,7 +2,7 @@ import styles from '../styles/Lookbook.module.css';
 
 export default function Lookbook() {
   return (
-    <section className="container">
+    <section className={`container ${styles.container}`}>
       <div className={styles.wrapper}>
         
         <div className={styles.customCollage}>

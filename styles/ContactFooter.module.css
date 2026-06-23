@@ -199,89 +199,120 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem !important;
+  }
+
   .contactSection {
-    min-height: 150vh; /* Maintain a larger viewport height on mobile as well */
-    padding: 24rem 0;
+    min-height: 100vh !important;
+    padding: 8rem 0 6rem 0 !important;
+  }
+
+  .title {
+    font-size: clamp(2rem, 9.5vw, 3.5rem) !important;
+    line-height: 1.05 !important;
   }
 
   .diamond {
-    margin: 8rem 0; /* Spacious diamond margins on mobile */
+    width: 12px !important;
+    height: 12px !important;
+    margin: 3.5rem 0 !important;
   }
   
   .buttonRow {
-    gap: var(--space-lg);
+    gap: 1.5rem !important;
     margin-top: 0;
   }
   
   .btnWrapper {
-    padding-top: 60px;
+    padding-top: min(60px, 16vw) !important;
+    width: min(320px, 85vw) !important;
   }
   
   .btnTab {
-    width: 110px;
-    height: 94px; /* Maintaining WhiteSquare.webp aspect ratio: 110 / 1.17 = ~94px */
+    width: min(110px, 29vw) !important;
+    height: auto !important;
+    aspect-ratio: 110 / 94 !important;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .brandIcon {
-    width: 60px;
-    height: 60px;
-    top: 18px; /* Centered in mobile tab height */
+    width: min(60px, 16vw) !important;
+    height: min(60px, 16vw) !important;
+    top: min(18px, 4.8vw) !important;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .whatsappIcon {
-    width: 50px;
-    height: 50px;
-    top: 23px;
+    width: min(50px, 13vw) !important;
+    height: min(50px, 13vw) !important;
+    top: min(23px, 6.1vw) !important;
   }
 
   .btnPill {
-    width: 320px;
-    height: 75px; /* Maintaining WhiteBar.webp aspect ratio: 320 / 4.29 = ~75px */
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 320 / 75 !important;
     padding: 0;
   }
 
   .btnPill span {
     font-family: 'Helixa', var(--font-helixa), var(--font-gotham);
-    font-size: 28px; /* Scaled down for mobile viewports */
+    font-size: clamp(1rem, 5.5vw, 1.4rem) !important;
     font-weight: 400;
     line-height: 108.7%;
     letter-spacing: -0.03em;
   }
 
+  .arcBase img {
+    opacity: 0.65 !important;
+  }
+
   /* 
     MANUAL CONFIGURATION FOR EACH CORNER STROKE (MOBILE OVERRIDES)
-    Tweak sizing and positioning specifically for mobile viewports.
+    Tweak sizing, positioning offsets, and rotation angles specifically for mobile viewports.
   */
+
+  /* 1. Top Left Blue Stroke (Mobile) */
   .topArcLeft {
-    top: -80px;
-    left: -100px;
-    width: 350px;
-    height: 465px;
+    top: -80px !important;
+    left: -40px !important;
+    width: 180px !important;
+    height: 265px !important;
+    transform: rotate(0deg) !important;
+    opacity: 1 !important;
   }
 
+  /* 2. Top Right Blue Stroke (Mobile) */
   .topArcRight {
-    top: -100px;
-    right: -80px;
-    width: 320px;
-    height: 615px;
+    top: -80px !important;
+    right: -30px !important;
+    width: 150px !important;
+    height: 340px !important;
+    transform: rotate(0deg) !important;
+    opacity: 1 !important;
   }
 
+  /* 3. Bottom Left Pink Stroke (Mobile) */
   .bottomArcLeft {
-    bottom: -150px;
-    left: -60px;
-    width: 250px;
-    height: 700px;
+    bottom: -180px !important;
+    left: -20px !important;
+    width: 80px !important;
+    height: 500px !important;
+    transform: rotate(0deg) !important;
+    opacity: 1 !important;
   }
 
+  /* 4. Bottom Right Pink Stroke (Mobile) */
   .bottomArcRight {
-    bottom: -130px;
-    right: -60px;
-    width: 220px;
-    height: 640px;
+    bottom: -180px !important;
+    right: -20px !important;
+    width: 80px !important;
+    height: 480px !important;
+    transform: rotate(0deg) !important;
+    opacity: 1 !important;
   }
 
   .topFade {

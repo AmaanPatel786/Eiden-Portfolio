@@ -14,3 +14,9 @@
   /* Use drop-shadow instead of box-shadow to match the PNG's rounded corners */
   filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.4));
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}

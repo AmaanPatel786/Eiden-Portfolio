@@ -47,7 +47,7 @@ export default function OurProcess() {
 
   return (
     <section className={styles.section} id="process">
-      <div className="container">
+      <div className={`container ${styles.container}`}>
         {/* Transitional Banners */}
         <div className={styles.bannerContainer}>
           <img src="/eiden_creative_process.webp" alt="Eiden Creative Process" className={styles.processBannerImg} loading="lazy" />
@@ -72,7 +72,7 @@ export default function OurProcess() {
         <img src="/ULPStroke.webp" alt="" className={`${styles.stroke} ${styles.llp}`} loading="lazy" />
         <img src="/URPStroke.webp" alt="" className={`${styles.stroke} ${styles.lrp}`} loading="lazy" />
 
-        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+        <div className={`container ${styles.container}`} style={{ position: 'relative', zIndex: 2 }}>
           <h2 className={styles.mainTitle}>Our Process!</h2>
           
           <div className={`${styles.diamondSeparator} ${styles.firstDiamond}`}></div>

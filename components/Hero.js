@@ -10,7 +10,7 @@ export default function Hero() {
         </div>
 
         <h1 className={styles.title}>
-          THE ALL <span className={styles.highlight}>AESTHETIC BRAND</span> YOU'VE BEEN <br />
+          THE ALL <span className={styles.highlight}>AESTHETIC BRAND</span> YOU&apos;VE BEEN <br />
           <span className={styles.titleSecondLine}>WAITING FOR</span>
         </h1>
         

@@ -1195,6 +1195,172 @@
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .mainTitle {
+    font-size: clamp(2.2rem, 9vw, 3.2rem);
+    line-height: 1.05;
+  }
+
+  .diamondSeparator {
+    width: 12px;
+    height: 12px;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .subtitle {
+    font-size: clamp(0.95rem, 4.5vw, 1.15rem);
+    line-height: 1.4;
+    margin-bottom: 2.5rem;
+  }
+
+  .subtitle br {
+    display: none;
+  }
+
+  .phoneGrid {
+    margin-bottom: 2.5rem;
+  }
+
+  .phoneTitle {
+    font-size: clamp(2rem, 8.5vw, 3rem);
+    line-height: 1.05;
+  }
+
+  .pinkStroke {
+    width: 65vw;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10vw;
+    opacity: 0.8;
+  }
+
+  .hoodieSection {
+    padding: 3rem 0;
+  }
+
+  .hoodieMainCard,
+  .hoodieTopCard,
+  .hoodiePairCard,
+  .hoodieTeeCard,
+  .badgeCard,
+  .skinMatCard,
+  .bagsCard,
+  .socksCard {
+    border-radius: 16px !important;
+  }
+
+  .hoodieGrid,
+  .hoodieTeeGrid,
+  .badgeGrid,
+  .skinMatGrid,
+  .bagsGrid,
+  .socksGrid {
+    width: calc(100% - 32px) !important;
+    margin: 0 auto !important;
+    gap: 1rem !important;
+  }
+
+  .hoodieTeeGrid {
+    margin-top: 1rem !important;
+  }
+
+  .hoodieRightCol,
+  .hoodieBottomPair,
+  .hoodieTeeCol,
+  .badgeCol,
+  .skinMatCol,
+  .bagsCol,
+  .socksCol {
+    gap: 1rem !important;
+  }
+
+  .hoodieTeeTitleText,
+  .badgeTitleText,
+  .skinMatTitle,
+  .bagsTitle,
+  .socksTitle {
+    font-size: clamp(2rem, 8.5vw, 3rem);
+    line-height: 1.05;
+  }
+
+  .badgeTitleText {
+    margin-right: 0 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .badgeSection {
+    padding: 2rem 0 1rem 0 !important;
+  }
+
+  .skinMatSection {
+    padding: 1rem 0 3rem 0 !important;
+  }
+
+  .skinMatTitle {
+    margin-top: 0 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .bagsSection {
+    padding: 1rem 0 1rem 0 !important;
+  }
+
+  .bagsTitle {
+    margin-top: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .socksTitle {
+    margin-top: 2rem !important;
+    margin-bottom: 1.5rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  .socksBannerContainer {
+    width: calc(100% - 32px) !important;
+    margin: 1rem auto 0 auto !important;
+  }
+
+  .socksCardEiden61 {
+    margin-bottom: 2rem !important;
+  }
+
+  .section {
+    padding-bottom: 3rem !important;
+  }
+
+  .extraBlock {
+    margin-top: 1.5rem !important;
+    padding: 0 1.25rem !important;
+  }
+
+  .diamondDivider {
+    width: 12px !important;
+    height: 12px !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .extraTitleText {
+    font-size: clamp(1.1rem, 5vw, 1.4rem) !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .extraListText {
+    font-size: clamp(1.2rem, 5.5vw, 1.6rem) !important;
+    line-height: 1.35 !important;
+  }
+}
+
 
 
 

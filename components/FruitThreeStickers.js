@@ -2,7 +2,7 @@ import styles from '../styles/FruitThreeStickers.module.css';
 
 export default function FruitThreeStickers() {
   return (
-    <section className="container">
+    <section className={`container ${styles.container}`}>
       <div className={styles.block}>
         <img 
           src="/the_third_fruit_sticker_packs.webp" 

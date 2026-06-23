@@ -217,3 +217,51 @@
     height: 1248px;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .contentContainer {
+    padding-top: 4rem;
+    padding-bottom: 20vw;
+  }
+
+  .bottomBanner {
+    margin-top: -10vw;
+  }
+
+  .stepDesc br {
+    display: none;
+  }
+
+  .mainTitle {
+    font-size: clamp(2.2rem, 9vw, 3.2rem);
+    white-space: normal;
+    line-height: 1.05;
+  }
+
+  .stepTitle {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+    margin-bottom: 1rem;
+    white-space: normal;
+  }
+
+  .stepDesc {
+    font-size: clamp(0.95rem, 4.5vw, 1.15rem);
+    line-height: 1.4;
+    max-width: 95%;
+  }
+
+  .diamondSeparator {
+    width: 12px;
+    height: 12px;
+    margin: 1.5rem auto;
+  }
+
+  .firstDiamond {
+    margin-top: 0.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+}

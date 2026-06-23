@@ -21,7 +21,7 @@ export default function About() {
           <div className={styles.bioCard}>
             <h3 className={styles.bioTitle}>Eiden - The Creator</h3>
             <p className={styles.bioText}>
-              I'm an illustrator and graphic designer obsessed with streetwear cultures, pixel-art retro nostalgia, and aggressive pop art. I mix modern underground themes with high-impact color palettes to design premium merchandise, cover art, and posters that demand attention.
+              I&apos;m an illustrator and graphic designer obsessed with streetwear cultures, pixel-art retro nostalgia, and aggressive pop art. I mix modern underground themes with high-impact color palettes to design premium merchandise, cover art, and posters that demand attention.
             </p>
             <p className={styles.subText}>
               Based in the creative underground, partnering with global clothing brands, indie developers, and musicians to deliver visuals that stand out in a saturated digital landscape.
