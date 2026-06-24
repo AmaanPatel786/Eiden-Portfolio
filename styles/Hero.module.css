@@ -106,6 +106,9 @@
     border-right: none;
     margin-bottom: 2.5rem;
   }
+  .bannerImg {
+    object-position: 49% center;
+  }
   .title {
     font-size: clamp(2.2rem, 9vw, 3.2rem);
     line-height: 1.05;
