@@ -254,20 +254,23 @@
 
   .mockupContainer {
     width: calc(100% + 2.5rem);
+    height: 80vw;
+    aspect-ratio: auto;
     right: 0;
     left: 0;
     margin-left: -1.25rem;
     margin-right: -1.25rem;
-    margin-bottom: -45vw;
+    margin-bottom: -60vw;
   }
 
   .mockupImg {
     margin-right: 0;
+    object-fit: cover;
   }
 
   .whiteCard {
     width: 100%;
-    padding-top: 52vw;
+    padding-top: 68vw;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 2.5rem;
@@ -302,15 +305,17 @@
 
   .mockupContainer {
     width: calc(100% + 2.5rem);
+    height: 85vw;
+    aspect-ratio: auto;
     right: 0;
     left: 0;
     margin-left: -1.25rem;
     margin-right: -1.25rem;
-    margin-bottom: -48vw;
+    margin-bottom: -65vw;
   }
 
   .whiteCard {
-    padding-top: 55vw;
+    padding-top: 73vw;
     border-radius: 30px;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
